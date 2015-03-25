@@ -1,0 +1,41 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _widths.scss
+
+    Fractional widths
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.row {
+    padding-left: 0;
+    padding-right: 0;
+    @include clearfix;
+
+    .row {
+        margin: 0 (-$spacing-unit / 2);
+    }
+}
+
+.column {
+    display: relative;
+    float: left;
+    margin-top: 0;
+    margin-bottom: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+// Setup widths with no namespace (Covers 0 to small range)
+@include width-setup;
+
+@if $gimme-responsive-widths == true {
+    // Small widths - 320px
+    @include mq($small) {@include width-setup($namespace: "small");}
+
+    // Medium widths - 640px
+    @include mq($medium) {@include width-setup($namespace: "medium");}
+
+    // Large widths - 960px
+    @include mq($large) {@include width-setup($namespace: "large");}
+
+    // Xlarge widths - 1280px
+    @include mq($xlarge) {@include width-setup($namespace: "xlarge");}
+}

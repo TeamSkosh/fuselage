@@ -1,0 +1,19 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _helpers.scss
+
+    Simple utility classes for showing, hiding, and positioning
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.clearfix {
+    @include clearfix;
+}
+
+.hidden {display: none;}
+.left {float: left;}
+.right {float: right;}
+
+// Font smoothing works best for light text on a dark background.
+.antialiased {
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}

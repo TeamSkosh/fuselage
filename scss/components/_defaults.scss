@@ -1,0 +1,62 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _defaults.scss
+
+    This contains default variables for fuselage
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+// Features
+$gimme-debug: false !default;
+$gimme-responsive-widths: false !default;
+
+// Breakpoints (lower bounds, mobile first)
+$xsmall: 0 !default;
+$small: 320px !default;
+$medium: 640px !default;
+$large: 960px !default;
+$xlarge: 1280px !default;
+
+// Brand Colors
+$brand-primary: #FF6633 !default;
+$brand-primary-tint: lighten($brand-primary, 30%);
+$brand-primary-shade: darken($brand-primary, 30%);
+
+$brand-secondary: #6DBBB7 !default;
+$brand-secondary-tint: lighten($brand-secondary, 30%);
+$brand-secondary-shade: darken($brand-secondary, 30%);
+
+$brand-tertiary: #B29167 !default;
+$brand-tertiary-tint: lighten($brand-tertiary, 30%);
+$brand-tertiary-shade: darken($brand-tertiary, 30%);
+
+// Default Colors
+$gray: #5D5D5D !default;
+$gray-tint: lighten($gray, 55%);
+$gray-shade: darken($gray, 30%);
+
+$darkgray: #2E2E2E !default;
+$darkgray-tint: lighten($darkgray, 30%);
+$darkgray-shade: darken($darkgray, 10%);
+
+$white: #FFF;
+$black: #000;
+$transparent: rgba(255,255,255,0);
+
+$debug-color-1: #778899 !default;
+$debug-color-2: #4F6610 !default;
+$debug-color-3: #D93B3B !default;
+$debug-color-4: #E24902 !default;
+$debug-color-5: #FFD454 !default;
+$debug-color-6: #8450B3 !default;
+
+// Typography
+$base-font: Helvetica, Arial, sans-serif !default;
+$specialty-font: "Hoefler Text", "Times New Roman", Times, serif !default;
+$mono-font: "Lucida Console", Monaco, monospace !default;
+$base-font-size: 1.8rem !default;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.5 !default;
+$text-color: $darkgray !default;
+
+// Spacing
+$spacing-unit: 1.6rem !default;
+$border-radius: 1.6rem !default;

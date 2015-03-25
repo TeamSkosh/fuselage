@@ -1,0 +1,32 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _reset.scss
+
+    Basic reset
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+// Set root font-size to 10px
+html {font-size: 62.5%;}
+
+// Global box-sizing
+* {box-sizing: border-box;}
+
+// Other Basic Resets
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,77 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _mixins.scss
+
+    Framework-wide tools
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+}
+
+// Media query setup. Takes media size and optional parameter for "print"
+@mixin mq($media-size, $media: "screen") {
+    @media #{$media} and (min-width: #{$media-size}) {
+        @content;
+    }
+}
+
+// Grid mixins
+@mixin width-calc($divisor, $dividend) {
+    $width: percentage($divisor / $dividend);
+    width: $width;
+}
+
+@mixin alpha {
+    padding-left: 0 !important;
+    padding-right: $spacing-unit / 2 !important;
+}
+
+@mixin omega {
+    padding-left: $spacing-unit / 2 !important;
+    padding-right: 0 !important;
+}
+
+@mixin alphaomega {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+// Width setup
+@mixin width-setup($namespace: "") {
+    @if $namespace != "" {$namespace: $namespace + "-";}
+
+    .#{$namespace}one-half {@include width-calc(1,2);}
+
+    .#{$namespace}one-third {@include width-calc(1,3);}
+    .#{$namespace}two-thirds {@include width-calc(2,3);}
+
+    .#{$namespace}one-fourth {@include width-calc(1,4);}
+    .#{$namespace}three-fourths {@include width-calc(3,4);}
+
+    .#{$namespace}one-fifth {@include width-calc(1,5);}
+    .#{$namespace}two-fifths {@include width-calc(2,5);}
+    .#{$namespace}three-fifths {@include width-calc(3,5);}
+    .#{$namespace}four-fifths {@include width-calc(4,5);}
+
+    .#{$namespace}one-sixth {@include width-calc(1,6);}
+    .#{$namespace}five-sixths {@include width-calc(5,6);}
+
+    .#{$namespace}one-eigth {@include width-calc(1,8);}
+    .#{$namespace}three-eigths {@include width-calc(3,8);}
+    .#{$namespace}five-eigths {@include width-calc(5,8);}
+    .#{$namespace}seven-eigths {@include width-calc(7,8);}
+
+    .#{$namespace}one-tenth {@include width-calc(1,10);}
+    .#{$namespace}three-tenths {@include width-calc(3,10);}
+    .#{$namespace}seven-tenths {@include width-calc(7,10);}
+    .#{$namespace}nine-tenths {@include width-calc(9,10);}
+
+    .#{$namespace}one-twelfth {@include width-calc(1,12);}
+    .#{$namespace}five-twelfths {@include width-calc(5,12);}
+    .#{$namespace}seven-twelfths {@include width-calc(7,12);}
+    .#{$namespace}one-twelfths {@include width-calc(11,12);}
+}

@@ -1,0 +1,24 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _debug.scss
+
+    Debugging styles to evaluate layout and provide suggestions
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+body * {
+    outline: 1px solid $debug-color-1 !important;
+    * {
+        outline: 1px solid $debug-color-2 !important;
+        * {
+            outline: 1px solid $debug-color-3 !important;
+            * {
+                outline: 1px solid $debug-color-4 !important;
+                * {
+                    outline: 1px solid $debug-color-5 !important;
+                    * {
+                        outline: 1px solid $debug-color-6 !important;
+                    }
+                }
+            }
+        }
+    }
+}

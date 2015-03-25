@@ -1,0 +1,127 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _typography.scss
+
+    Typographic styles and modular scale
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+body {
+    font-family: $base-font;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit;
+}
+
+h1,
+h2,
+h4 {
+    font-family: $specialty-font;
+    line-height: 1.1;
+}
+
+h3,
+h5,
+h6 {
+    font-family: $base-font;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 300;
+
+    @include mq($medium) {
+        font-size: 3.5rem;
+    }
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+
+  @include mq($medium) {
+      font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+
+  @include mq($medium) {
+      font-size: 2.8rem;
+  }
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-style: italic;
+
+  @include mq($medium) {
+      font-size: 2.2rem;
+  }
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  @include mq($medium) {
+      font-size: 2rem;
+  }
+}
+
+h6 {
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    @include mq($medium) {
+        font-size: 1.7rem;
+    }
+}
+
+blockquote {
+    color: $gray;
+    border-left: 4px solid $gray-tint;
+    padding-left: $spacing-unit / 2;
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Code
+pre,
+code {
+    font-family: $mono-font;
+    font-size: 15px;
+    border: 1px solid $gray-tint;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

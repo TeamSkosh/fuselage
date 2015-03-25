@@ -1,0 +1,23 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _buttons.scss
+
+    Basic button styles
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.button {
+    background: $gray-tint;
+    border: 1px solid $gray-tint;
+    border-radius: $border-radius;
+    color: $white;
+    float: left;
+    height: 3em;
+    line-height: 1em;
+    padding: 1em 2%;
+    text-align: center;
+
+    &:hover {
+        background: $transparent;
+        border: 1px solid $brand-primary;
+        color: $brand-primary;
+    }
+}
