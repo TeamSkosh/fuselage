@@ -1,11 +1,19 @@
 {
     "name": "fuselage",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "authors": "Skosh Interactive, L.L.C",
-    "description": "A sass-based front-end framework aimed at developer productivity and a composable structure.",
+    "description": "A sass-based, mobile-first front-end framework aimed at developer productivity and structural composability.",
     "main": [
         "scss/fuselage.scss"
-    ]
+    ],
+    "ignore": [
+        "*.md",
+        ".bowerrc",
+        ".gitignore",
+        "bower.json",
+        "Gruntfile.js",
+        "package.json"
+    ],
     "keywords": [
         "composable",
         "css",
@@ -18,4 +26,3 @@
     ],
     "license": "Apache 2.0"
 }
-
