@@ -19,30 +19,17 @@
     }
 }
 
-// Grid mixins
+// Width calculator
 @mixin width-calc($divisor, $dividend) {
     $width: percentage($divisor / $dividend);
     width: $width;
 }
 
-@mixin alpha {
-    padding-left: 0 !important;
-    padding-right: $spacing-unit / 2 !important;
-}
-
-@mixin omega {
-    padding-left: $spacing-unit / 2 !important;
-    padding-right: 0 !important;
-}
-
-@mixin alphaomega {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
 // Width setup
 @mixin width-setup($namespace: "") {
     @if $namespace != "" {$namespace: $namespace + "-";}
+
+    .#{$namespace}one-whole {width: 100%;}
 
     .#{$namespace}one-half {@include width-calc(1,2);}
 

@@ -4,8 +4,11 @@
     Basic reset
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-// Set root font-size to 10px
-html {font-size: 62.5%;}
+// Set root font-size to 10px and hide html overflow
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
 
 // Global box-sizing
 * {box-sizing: border-box;}

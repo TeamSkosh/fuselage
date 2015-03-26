@@ -5,8 +5,8 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .row {
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: (-$spacing-unit / 2);
+    margin-right: (-$spacing-unit / 2);
     @include clearfix;
 
     .row {
@@ -18,7 +18,6 @@
     display: relative;
     float: left;
     margin-top: 0;
-    margin-bottom: $spacing-unit / 2;
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
 }
