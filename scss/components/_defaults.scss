@@ -48,13 +48,16 @@ $debug-color-4: #E24902 !default;
 $debug-color-5: #FFD454 !default;
 $debug-color-6: #8450B3 !default;
 
+// Modular Scale
+$base-scale: $golden !default; // 1.618034
+
 // Typography
 $base-font: Helvetica, Arial, sans-serif !default;
-$specialty-font: "Hoefler Text", "Times New Roman", Times, serif !default;
-$mono-font: "Lucida Console", Monaco, monospace !default;
+$specialty-font: "Palatino linotype", "Book Antiqua", Palatino, serif !default;
+$mono-font: "Courier New", Courier, monospace !default;
 $base-font-size: 1.8rem !default;
 $small-font-size: $base-font-size * 0.875;
-$base-line-height: 1.5 !default;
+$base-line-height: $base-scale !default;
 $text-color: $darkgray !default;
 
 // Spacing

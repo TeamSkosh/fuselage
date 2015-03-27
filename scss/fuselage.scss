@@ -8,8 +8,10 @@
 @charset "UTF-8";
 
 // Import components
+@import "functions";
 @import "reset";
 @import "normalize";
+@import "ratios";
 @import "defaults";
 @import "settings";
 @import "mixins";
