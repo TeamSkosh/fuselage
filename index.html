@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kitchen Sink</title>
-    <link rel="stylesheet" href="css/fuselage.min.css">
+    <link rel="stylesheet" href="css/fuselage.min.prefixed.css">
     <style>
         .container {
             max-width: 1000px;
@@ -43,16 +43,28 @@
                 </div><!-- /.row -->
             </div>
         </div><!-- /.row -->
-        <p class="headline">Welcome to Fuselage,<br> we're glad you're here.</p>
+        <p class="headline">Welcome to fuselage</p>
 
-        <h1>HTML Ipsum Presents</h1>
+        <hr>
+
+        <h1>HTML Ipsum <small>Presents</small></h1>
+
+        <p class="deck">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui neque quis voluptas ea enim accusantium molestias cumque, harum delectus error, dolorem quo beatae, at pariatur modi illo deserunt facere minus.</p>
+
+        <p class="byline">By Rand Seay</p>
 
         <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
 
-        <h2>Header Level 2</h2>
+        <h1 class="primary-text">Test1 <small>Hello</small></h1>
+        <h2 class="secondary-text">Test2 <small>Hello</small></h2>
+        <h3 class="tertiary-text">Test3 <small>Hello</small></h3>
+        <h4 class="info-text">Test4 <small>Hello</small></h4>
+        <h5 class="success-text">Test5 <small>Hello</small></h5>
+        <h6 class="warn-text">Test6 <small>Hello</small></h6>
 
-        <p style="font-size: 1rem">1rem: This is a test sentence.</p>
-        <p style="font-size: 10px">10px: This is also a test sentence.</p>
+        <a href="#" class="button">Test Button</a>
+
+        <h2>Header Level 2</h2>
 
         <ol>
            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
@@ -68,13 +80,12 @@
            <li>Aliquam tincidunt mauris eu risus.</li>
         </ul>
 
-        <pre><code>
-        #header h1 a {
-            display: block;
-            width: 300px;
-            height: 80px;
-        }
-        </code></pre>
+        <pre><code>#header h1 a {
+    display: block;
+    width: 300px;
+    height: 80px;
+}</code></pre>
+
 
           <h1>This is an h1</h1>
           <p class="left primary-color">Primary Color</p>
@@ -141,13 +152,11 @@
             <blockquote><p>“Ooh - a blockquote! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.”</p></blockquote>
             <h4>A sub heading which is not as important as the second, but should be used with consideration</h4>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-            <pre><code>
-        #header h1 a {
-            display: block;
-            width: 300px;
-            height: 80px;
-        }
-            </code></pre>
+            <pre><code>#header h1 a {
+    display: block;
+    width: 300px;
+    height: 80px;
+}</code></pre>
             <h5>A sub heading which is not as important as the second, but should be used with consideration</h5>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
             <dl>
@@ -155,10 +164,21 @@
            <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat.</dd>
+            <dd>This is a definition.</dd>
+            <dd>This is a definition.</dd>
+            <dd>This is a definition.</dd>
                <dt>Lorem ipsum dolor sit amet</dt>
                <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat.</dd>
+            <dd>Test</dd>
+            <dt>Lorem ipsum dolor sit amet</dt>
+               <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</dd>
+            <dt>Question</dt>
+            <dt>Question2</dt>
+            <dd>Answer</dd>
             </dl>
             <h6>This heading plays a relatively small bit part role, if you use it at all</h6>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
@@ -425,6 +445,8 @@
             </td></tr></tbody></table>
 
             <img src="http://cdn3.vox-cdn.com/uploads/chorus_asset/file/917470/iphone-6-travel-photo-review-mann-header.0.jpg" alt="">
+
+            <figcaption>This is a very pretty picture!</figcaption>
 
             <h2>Hyphenation</h2>
             <p>In the following, a width setting should cause some hyphenation,

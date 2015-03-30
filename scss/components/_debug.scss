@@ -4,6 +4,8 @@
     Debugging styles to evaluate layout and provide suggestions
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+@warn "MODULAR SCALE DEBUG: Your ratio is " + $base-ratio + " and your generate scale is " + $generated-scale;
+
 body * {
     outline: 1px solid $debug-color-1 !important;
     * {
