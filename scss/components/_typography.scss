@@ -4,120 +4,104 @@
     Typographic styles and modular scale
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+// Modular Scale
+@include modular-headings;
+
 body {
     font-family: $base-font;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+    font-weight: 200;
     color: $text-color;
     -webkit-text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1, h2, h3, h4, h5, h6, hr,
+p, blockquote, pre, table,
+ul, ol, dl, figure, address,
 %vertical-rhythm {
     margin-bottom: $spacing-unit;
 }
 
-h1,
-h2,
-h4 {
-    font-family: $specialty-font;
-    line-height: 1.1;
+small {
+  color: lighten($gray, 15%);
+  font-size: 70%;
+  font-weight: 100;
 }
 
-h3,
-h5,
-h6 {
-    font-family: $base-font;
-    line-height: 1.1;
+.headline {
+  font-family: $base-font;
+  font-weight: 100;
+  font-size: modular-scale(6);
+  line-height: 1;
+}
+
+.deck {
+  color: lighten($gray, 15%);
+  font-size: modular-scale(3);
+  line-height: 1.25;
+}
+
+.byline {
+  font-size: modular-scale(2) * 1.25;
+  font-weight: normal;
+}
+
+figcaption,
+.caption {
+  color: $gray;
+  font-size: modular-scale(2);
 }
 
 h1 {
-    font-size: 2.8rem;
-    font-weight: 300;
-
-    @include mq($medium) {
-        font-size: 3.5rem;
-    }
-}
-
-h2 {
-  font-size: 2.2rem;
-  font-weight: 600;
-
-  @include mq($medium) {
-      font-size: 3rem;
-  }
-}
-
-h3 {
-  font-size: 2rem;
-  font-weight: 400;
-
-  @include mq($medium) {
-      font-size: 2.8rem;
-  }
-}
-
-h4 {
-  font-size: 1.8rem;
-  font-style: italic;
-
-  @include mq($medium) {
-      font-size: 2.2rem;
-  }
-}
-
-h5 {
-  font-size: 1.6rem;
-  font-weight: 600;
-
-  @include mq($medium) {
-      font-size: 2rem;
-  }
-}
-
-h6 {
-    font-size: 1.4rem;
-    font-weight: 600;
-
-    @include mq($medium) {
-        font-size: 1.7rem;
-    }
+  font-weight: 100;
 }
 
 blockquote {
-    color: $gray;
-    border-left: 4px solid $gray-tint;
-    padding-left: $spacing-unit / 2;
-    font-size: 1.8rem;
-    letter-spacing: -1px;
-    font-style: italic;
+    color: lighten($gray, 15%);
+    border-left: 1px solid lighten($gray, 30%);
+    padding-left: $spacing-unit;
+    font-weight: 200;
 
     > :last-child {
         margin-bottom: 0;
     }
 }
 
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: $spacing-unit;
+
+  &+ dt {
+    margin-top: $spacing-unit;
+  }
+}
+
 // Code
 pre,
-code {
+code,
+kbd {
     font-family: $mono-font;
-    font-size: 15px;
-    border: 1px solid $gray-tint;
-    border-radius: 3px;
-    background-color: #eef;
+    border-radius: $border-radius / 2;
+    background-color: $gray-tint;
 }
 
 code {
     padding: 1px 5px;
 }
 
+kbd {
+  font-weight: bold;
+}
+
 pre {
-    padding: 8px 12px;
+    padding: $spacing-unit;
     overflow-x: scroll;
+    white-space: pre;
+    word-wrap: normal;
 
     > code {
         border: 0;
@@ -125,3 +109,13 @@ pre {
         padding-left: 0;
     }
 }
+
+h1, h2, h3, h4, h5, h6, hr,
+p, blockquote, pre, table,
+ul, ol, dl, figure, address {
+  a {
+    @include text-link($brand-primary);
+  }
+}
+
+

@@ -17,3 +17,64 @@
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
 }
+
+.rounded {
+    border-radius: $border-radius;
+}
+
+// Color helpers
+.primary {
+    background: $brand-primary;
+    color: $white;
+}
+.primary-text {
+    color: $brand-primary;
+}
+
+.secondary {
+    background: $brand-secondary;
+    color: $white;
+}
+.secondary-text {
+    color: $brand-secondary;
+}
+
+.tertiary {
+    background: $brand-tertiary;
+    color: $white;
+}
+.tertiary-text {
+    color: $brand-tertiary;
+}
+
+.info {
+    background: $debug-color-1;
+    color: $white;
+}
+.info-text {
+    color: $debug-color-1;
+}
+
+.success {
+    background: $debug-color-2;
+    color: $white;
+}
+.success-text {
+    color: $debug-color-2;
+}
+
+.warn {
+    background: $debug-color-5;
+    color: $white;
+}
+.warn-text {
+    color: $debug-color-5;
+}
+
+.alert {
+    background: $debug-color-4;
+    color: $white;
+}
+.alert-text {
+    color: $debug-color-4;
+}

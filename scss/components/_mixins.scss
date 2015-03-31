@@ -62,3 +62,35 @@
     .#{$namespace}seven-twelfths {@include width-calc(7,12);}
     .#{$namespace}one-twelfths {@include width-calc(11,12);}
 }
+
+// Modular Scale
+@mixin modular-headings($scale-list: $generated-scale, $num-headings: 5) {
+    $headings: ();
+    @for $i from $num-headings through 1 {
+        $headings: append($headings, $i);
+    }
+
+    @for $i from 1 through length($headings) {
+        h#{nth($headings, $i)}, .h#{nth($headings, $i)} {
+            font-size: nth($scale-list, $i);
+            line-height: 1;
+        }
+    }
+}
+
+// In-text links
+@mixin text-link($color: $brand-primary) {
+    color: $color;
+
+    &:hover {
+      border-bottom: 1px solid $color;
+    }
+
+    &:visited {
+      color: darken($color, 22%);
+
+      &:hover {
+        border-bottom: 1px solid darken($color, 22%);
+      }
+    }
+}

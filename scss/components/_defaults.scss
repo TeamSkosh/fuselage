@@ -6,7 +6,7 @@
 
 // Features
 $gimme-debug: false !default;
-$gimme-responsive-widths: false !default;
+$gimme-responsive-widths: true !default;
 
 // Breakpoints (lower bounds, mobile first)
 $xsmall: 0 !default;
@@ -18,15 +18,15 @@ $xlarge: 1280px !default;
 // Brand Colors
 $brand-primary: #FF6633 !default;
 $brand-primary-tint: lighten($brand-primary, 30%);
-$brand-primary-shade: darken($brand-primary, 30%);
+$brand-primary-shade: darken($brand-primary, 20%);
 
 $brand-secondary: #6DBBB7 !default;
 $brand-secondary-tint: lighten($brand-secondary, 30%);
-$brand-secondary-shade: darken($brand-secondary, 30%);
+$brand-secondary-shade: darken($brand-secondary, 20%);
 
 $brand-tertiary: #B29167 !default;
 $brand-tertiary-tint: lighten($brand-tertiary, 30%);
-$brand-tertiary-shade: darken($brand-tertiary, 30%);
+$brand-tertiary-shade: darken($brand-tertiary, 20%);
 
 // Default Colors
 $gray: #5D5D5D !default;
@@ -42,21 +42,34 @@ $black: #000;
 $transparent: rgba(255,255,255,0);
 
 $debug-color-1: #778899 !default;
-$debug-color-2: #4F6610 !default;
+$debug-color-2: #3B8C0C !default;
 $debug-color-3: #D93B3B !default;
 $debug-color-4: #E24902 !default;
 $debug-color-5: #FFD454 !default;
 $debug-color-6: #8450B3 !default;
 
+$info-color: $debug-color-1 !default;
+$success-color: $debug-color-2 !default;
+$warn-color: $debug-color-5 !default;
+$alert-color: $debug-color-4 !default;
+
+// Modular Scale
+$base-ratio: $golden !default; // 1.618034
+$scale-length: 7 !default;
+
+$generated-scale: (1rem);
+@for $i from 1 through $scale-length - 1 {
+    $generated-scale: append($generated-scale, nth($generated-scale, $i) * $base-ratio);
+}
+
 // Typography
 $base-font: Helvetica, Arial, sans-serif !default;
-$specialty-font: "Hoefler Text", "Times New Roman", Times, serif !default;
-$mono-font: "Lucida Console", Monaco, monospace !default;
+$specialty-font: "Palatino linotype", "Book Antiqua", Palatino, serif !default;
+$mono-font: "Courier New", Courier, monospace !default;
 $base-font-size: 1.8rem !default;
-$small-font-size: $base-font-size * 0.875;
-$base-line-height: 1.5 !default;
+$base-line-height: $base-ratio !default;
 $text-color: $darkgray !default;
 
 // Spacing
-$spacing-unit: 1.6rem !default;
-$border-radius: 1.6rem !default;
+$spacing-unit: modular-scale(3) !default;
+$border-radius: modular-scale(1) !default;

@@ -21,17 +21,20 @@ module.exports = function(grunt) {
 
         autoprefixer: {
             options: {
-                browsers: ['last 2 versions', 'ie 8', 'ie 9']
+                browsers: ['last 2 versions', 'ie 8', 'ie 9'],
+                map: true
             },
             dist: {
-                src: 'css/*.css'
+                files: {
+                    'css/fuselage.min.prefixed.css': 'css/fuselage.min.css'
+                }
             },
         },
 
         watch: {
             dist: {
                 files: ['scss/*.scss', 'scss/components/*.scss'],
-                tasks: ['sass:dist']
+                tasks: ['sass:dist', 'autoprefixer:dist']
             }
         }
 
