@@ -12,12 +12,18 @@
 .left {float: left;}
 .right {float: right;}
 
+.disabled,
+[disabled] {
+    cursor: not-allowed;
+}
+
 // Font smoothing works best for light text on a dark background.
 .antialiased {
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
 }
 
+// Border radius
 .rounded {
     border-radius: $border-radius;
 }
