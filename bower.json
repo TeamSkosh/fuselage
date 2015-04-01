@@ -1,6 +1,6 @@
 {
     "name": "fuselage",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "authors": "Skosh Interactive, L.L.C",
     "description": "A sass-based, mobile-first front-end framework aimed at developer productivity and structural composability.",
     "main": [
@@ -12,6 +12,7 @@
         ".gitignore",
         "bower.json",
         "Gruntfile.js",
+        "index.html",
         "package.json"
     ],
     "keywords": [
