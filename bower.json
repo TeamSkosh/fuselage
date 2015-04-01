@@ -12,6 +12,7 @@
         ".gitignore",
         "bower.json",
         "Gruntfile.js",
+        "index.html",
         "package.json"
     ],
     "keywords": [
