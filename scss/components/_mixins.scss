@@ -93,4 +93,61 @@
         border-bottom: 1px solid darken($color, 22%);
       }
     }
+
+    &.disabled,
+    &[disabled] {
+        color: lighten($gray, 12%);
+        border-bottom: 1px solid ;
+
+        &:hover {
+            border-bottom-color: lighten($gray, 12%);
+        }
+    }
+}
+
+// Buttons
+@mixin button($color, $hover: $transparent, $text: $white, $reverse: false) {
+    @if $reverse == true {
+        background: $color;
+        border: 1px solid $color;
+        color: $text;
+
+        &:hover {
+            background: $hover;
+            color: $color;
+        }
+
+        &.disabled,
+        &[disabled] {
+            background: lighten($color, 12%);
+            border-color: lighten($color, 12%);
+            color: $text;
+            cursor: default;
+
+            &:hover {
+                background: lighten($color, 12%);
+                border-color: lighten($color, 12%);
+            }
+        }
+    } @else {
+        background: $hover;
+        border: 1px solid $color;
+        color: $color;
+
+        &:hover {
+            background: $color;
+            color: $text;
+        }
+
+        &.disabled,
+        &[disabled] {
+            border-color: lighten($color, 12%);
+            color: lighten($color, 12%);
+
+            &:hover {
+                background: $hover;
+                color: lighten($color, 12%);
+            }
+        }
+    }
 }

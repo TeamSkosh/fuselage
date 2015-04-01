@@ -4,20 +4,52 @@
     Basic button styles
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+button,
 .button {
-    background: $gray-tint;
-    border: 1px solid $gray-tint;
-    border-radius: $border-radius;
-    color: $white;
-    float: left;
-    height: 3em;
-    line-height: 1em;
-    padding: 1em 2%;
-    text-align: center;
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: $spacing-unit;
+    padding: $spacing-unit / 1.5;
 
-    &:hover {
-        background: $transparent;
-        border: 1px solid $brand-primary;
-        color: $brand-primary;
+    @include button($brand-primary);
+
+    &.secondary {
+        @include button($brand-secondary);
+    }
+
+    &.tertiary {
+        @include button($brand-tertiary);
+    }
+
+    &.info {
+        @include button($info-color);
+    }
+
+    &.success {
+        @include button($success-color);
+    }
+
+    &.warn {
+        @include button($warn-color);
+    }
+
+    &.alert {
+        @include button($alert-color);
+    }
+
+    &.tiny {
+        font-size: modular-scale(1);
+        padding: $spacing-unit / 4;
+    }
+
+    &.small {
+        font-size: modular-scale(1) * 1.25;
+        padding: $spacing-unit / 2;
+    }
+
+    &.large {
+        font-size: modular-scale(2) * 1.25;
+        padding: $spacing-unit;
     }
 }
