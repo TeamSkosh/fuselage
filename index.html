@@ -385,14 +385,92 @@
 
             <h2>Forms</h2>
 
-            <form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>title or explanatory caption</legend>
+                    <div class="row">
+                        <div class="column one-whole medium-one-half">
+                             <label for="name">Name
+                                 <input type="text" name="name" id="name" value="" tabindex="1" />
+                             </label>
+                        </div>
+
+                        <div class="column one-whole medium-one-half">
+                             <label>Radio Buttons</label>
+
+                             <input type="radio" name="radio-choice" id="radio-choice-1" tabindex="2" value="choice-1" />
+                             <label for="radio-choice-1">Choice 1</label>
+
+                             <input type="radio" name="radio-choice" id="radio-choice-2" tabindex="3" value="choice-2" />
+                             <label for="radio-choice-2">Choice 2</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column one-whole medium-one-third">
+                            <label for="select-choice">Select Dropdown Choice:</label>
+                            <select name="select-choice" id="select-choice">
+                                <option value="Choice 1">Choice 1</option>
+                                <option value="Choice 2">Choice 2</option>
+                                <option value="Choice 3">Choice 3</option>
+                            </select>
+                        </div>
+
+                        <div class="column one-whole medium-one-third">
+                            <label for="textarea">Textarea:</label>
+                            <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                        </div>
+
+                        <div class="column one-whole medium-one-third">
+                            <label for="checkbox">Checkbox:</label>
+                            <input type="checkbox" name="checkbox" id="checkbox" />
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </div>
+                </fieldset>
+
+                <label for="test1">Test1</label>
+                <input id="test1" type="button">
+
+                <label for="test2">Test1</label>
+                <input id="test2" type="checkbox">
+
+                <input type="color">
+
+                <input type="date">
+
+                <input type="datetime">
+                <input type="datetime-local">
+                <input type="email">
+                <input type="file">
+                <input type="hidden">
+                <input type="image">
+                <input type="month">
+                <input type="number">
+                <input type="password">
+                <input type="radio">
+                <input type="range">
+                <input type="reset">
+                <input type="search">
+                <input type="submit">
+                <input type="tel">
+                <input type="text">
+                <input type="time">
+                <input type="url">
+                <input type="week">
+            </form>
+
+            <form action="">
             <div>
             <input type="hidden" name="hidden field" value="42">
             This is a form containing various fields (with some initial
             values (defaults) set, so that you can see how input text looks
             like without actually typing it):</div>
             <div><label for="but">Button:
-            <button id="but" type="submit" name="foo" value="bar">A cool<br>button</button></label></div>
+            <button id="but" type="submit" name="foo" value="bar">A cool button</button></label></div>
             <div><label for="f0">Reset button:
             <input id="f0" type="reset" name="reset" value="Reset"></label></div>
             <div><label for="f1">Single-line text input field: <input id="f1" name="text" size="20" value="Default text."></label></div>

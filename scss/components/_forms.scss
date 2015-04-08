@@ -1,0 +1,25 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _forms.scss
+
+    Form styles
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+label {
+    cursor: pointer;
+    display: block;
+}
+
+input,
+textarea {
+    display: inline-block;
+    border: 1px solid lighten($gray, 20%);
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  margin-left: $spacing-unit / 4;
+  margin-right: $spacing-unit / 2;
+  margin-bottom: 0;
+  vertical-align: baseline;
+}
