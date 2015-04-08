@@ -4,6 +4,27 @@
     Form styles
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+#{text-inputs(all, 'input')} {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    display: block;
+    -webkit-transition: border-color 0.2s linear, background 0.2s linear;
+    -moz-transition: border-color 0.2s linear, background 0.2s linear;
+    -ms-transition: border-color 0.2s linear, background 0.2s linear;
+    -o-transition: border-color 0.2s linear, background 0.2s linear;
+    transition: border-color 0.2s linear, background 0.2s linear;
+    margin-bottom: $spacing-unit / 2;
+    outline: 1px solid #eee;
+    padding: $spacing-unit / 4;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
 label {
     cursor: pointer;
     display: block;

@@ -38,19 +38,3 @@ textarea {
 select {
     width: 100%;
 }
-
-#{text-inputs(all, 'input')} {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border-radius: 0;
-    -webkit-transition: border-color 0.2s linear, background 0.2s linear;
-    -moz-transition: border-color 0.2s linear, background 0.2s linear;
-    -ms-transition: border-color 0.2s linear, background 0.2s linear;
-    -o-transition: border-color 0.2s linear, background 0.2s linear;
-    transition: border-color 0.2s linear, background 0.2s linear;
-    outline: 1px solid #eee;
-
-    &:focus {
-        outline: none;
-    }
-}

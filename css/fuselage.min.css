@@ -412,21 +412,6 @@ textarea {
 select {
   width: 100%; }
 
-/* line 42, scss/components/_reset.scss */
-input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border-radius: 0;
-  -webkit-transition: border-color 0.2s linear, background 0.2s linear;
-  -moz-transition: border-color 0.2s linear, background 0.2s linear;
-  -ms-transition: border-color 0.2s linear, background 0.2s linear;
-  -o-transition: border-color 0.2s linear, background 0.2s linear;
-  transition: border-color 0.2s linear, background 0.2s linear;
-  outline: 1px solid #eee; }
-  /* line 53, scss/components/_reset.scss */
-  input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus {
-    outline: none; }
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     _ratios.scss
 
@@ -1255,16 +1240,36 @@ button, .button {
     Form styles
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* line 7, scss/components/_forms.scss */
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  display: block;
+  -webkit-transition: border-color 0.2s linear, background 0.2s linear;
+  -moz-transition: border-color 0.2s linear, background 0.2s linear;
+  -ms-transition: border-color 0.2s linear, background 0.2s linear;
+  -o-transition: border-color 0.2s linear, background 0.2s linear;
+  transition: border-color 0.2s linear, background 0.2s linear;
+  margin-bottom: 1.309017rem;
+  outline: 1px solid #eee;
+  padding: 0.654509rem;
+  width: 100%; }
+  /* line 23, scss/components/_forms.scss */
+  input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus {
+    outline: none; }
+
+/* line 28, scss/components/_forms.scss */
 label {
   cursor: pointer;
   display: block; }
 
-/* line 13, scss/components/_forms.scss */
+/* line 34, scss/components/_forms.scss */
 input, textarea {
   display: inline-block;
   border: 1px solid #909090; }
 
-/* line 19, scss/components/_forms.scss */
+/* line 40, scss/components/_forms.scss */
 input[type="checkbox"] + label, input[type="radio"] + label {
   display: inline-block;
   margin-left: 0.654509rem;
