@@ -107,6 +107,12 @@
 
 // Buttons
 @mixin button($color, $hover: $transparent, $text: $white, $reverse: false) {
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: $spacing-unit;
+    padding: $spacing-unit / 1.5;
+
     @if $reverse == true {
         background: $color;
         border: 1px solid $color;
@@ -122,7 +128,6 @@
             background: lighten($color, 12%);
             border-color: lighten($color, 12%);
             color: $text;
-            cursor: default;
 
             &:hover {
                 background: lighten($color, 12%);
@@ -149,5 +154,59 @@
                 color: lighten($color, 12%);
             }
         }
+    }
+}
+
+// Forms
+@mixin form-element {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #FFFFFF;
+    border: 1px solid #AFAFAF;
+    border-radius: 0;
+    display: block;
+    margin-bottom: $spacing-unit / 1.5;
+    outline: none;
+    padding: ($spacing-unit / 2.2) ($spacing-unit / 2.5) ($spacing-unit / 2.5);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    width: 100%;
+
+    &:focus {
+        background-color: #F8F8F8;
+        border: 1px solid #505050;
+    }
+}
+
+// CSS Triangle
+@mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) {
+    border: inset $triangle-size;
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+
+    @if ($triangle-direction == top) {
+        border-color: $triangle-color transparent transparent transparent;
+        border-top-style: solid;
+    }
+
+    @if ($triangle-direction == bottom) {
+        border-color: transparent transparent $triangle-color transparent;
+        border-bottom-style: solid;
+    }
+
+    @if ($triangle-direction == left) {
+        border-color: transparent transparent transparent $triangle-color;
+        border-left-style: solid;
+    }
+
+    @if ($triangle-direction == right) {
+        border-color: transparent $triangle-color transparent transparent;
+        border-right-style: solid;
     }
 }

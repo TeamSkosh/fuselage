@@ -14,7 +14,11 @@
 
 .disabled,
 [disabled] {
-    cursor: not-allowed;
+    cursor: not-allowed !important;
+}
+
+[readonly] {
+    cursor: not-allowed !important;
 }
 
 // Font smoothing works best for light text on a dark background.

@@ -81,7 +81,7 @@
         <a href="#" class="button warn small disabled">Test Button</a>
 
         <a href="#" class="button alert large">Large Alert Button</a>
-        <a href="#" class="button alert large disabled">Disabled Button</a>
+        <a href="#" class="button alert large" disabled>Disabled Button</a>
 
         <h2>Header Level 2</h2>
 
@@ -387,17 +387,17 @@
 
             <form action="#" method="post">
                 <fieldset>
-                    <legend>title or explanatory caption</legend>
+                    <legend>Account Information</legend>
                     <div class="row">
                         <div class="column one-whole medium-one-half">
                              <label for="first-name">First Name
-                                 <input type="text" name="first-name" id="first-name" value="" tabindex="1" />
+                                 <input type="text" name="first-name" id="first-name" value="" tabindex="1" placeholder="First Name" />
                              </label>
                         </div>
 
                         <div class="column one-whole medium-one-half">
                              <label for="last-name">Last Name
-                                 <input type="text" name="last-name" id="last-name" value="" tabindex="1" />
+                                 <input type="text" name="last-name" id="last-name" value="Seay" tabindex="1"disabled />
                              </label>
                         </div>
 
@@ -416,43 +416,53 @@
                         <div class="column one-whole medium-one-half">
                              <label>Radio Buttons</label>
 
-                             <input type="radio" name="radio-choice" id="radio-choice-1" tabindex="2" value="choice-1" />
+                             <input type="radio" name="radio-choice" id="radio-choice-1" tabindex="2" value="choice-1" disabled />
                              <label for="radio-choice-1">Choice 1</label>
 
                              <input type="radio" name="radio-choice" id="radio-choice-2" tabindex="3" value="choice-2" />
                              <label for="radio-choice-2">Choice 2</label>
                         </div>
+
+                        <div class="column one-whole medium-one-half">
+                            <label for="select-choice">Select Dropdown Choice:
+                                <select name="select-choice" id="select-choice" disabled>
+                                    <option value="Choice 1">Choice 1</option>
+                                    <option value="Choice 2">Choice 2</option>
+                                    <option value="Choice 3">Choice 3</option>
+                                </select>
+                            </label>
+                        </div>
                     </div>
 
                     <div class="row">
-                        <div class="column one-whole medium-one-third">
-                            <label for="select-choice">Select Dropdown Choice:</label>
-                            <select name="select-choice" id="select-choice">
-                                <option value="Choice 1">Choice 1</option>
-                                <option value="Choice 2">Choice 2</option>
-                                <option value="Choice 3">Choice 3</option>
-                            </select>
+                        <div class="column one-whole">
+                            <label for="textarea">Textarea:
+                                <textarea cols="40" rows="8" name="textarea" id="textarea" readonly></textarea>
+                            </label>
                         </div>
+                    </div>
 
-                        <div class="column one-whole medium-one-third">
-                            <label for="textarea">Textarea:</label>
-                            <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
-                        </div>
-
-                        <div class="column one-whole medium-one-third">
-                            <input type="checkbox" name="checkbox" id="checkbox" />
-                            <label for="checkbox">Checkbox:
+                    <div class="row">
+                        <div class="column one-whole medium-one-half">
+                            <label for="file">Upload something!
+                                <input type="file" name="file" id="file" />
                             </label>
                         </div>
 
-                        <div>
-                            <input type="submit" value="Submit" />
+                        <div class="column one-whole medium-one-half">
+                            <label>Agreement</label>
+                            <input type="checkbox" name="checkbox" id="checkbox" />
+                            <label for="checkbox">I accept
+                            </label>
                         </div>
                     </div>
+
+                    <input class="button" type="submit" value="Submit" disabled /> or
+                    <input class="button secondary small" type="reset" value="Clear All" />
                 </fieldset>
 
                 <label for="test1">Test1</label>
-                <input id="test1" type="button">
+                <input id="test1" type="button" value="Input Button">
 
                 <label for="test2">Test1</label>
                 <input id="test2" type="checkbox">
