@@ -4,3 +4,19 @@
     Basic table styles
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+table {
+    background: $white;
+    border: 1px solid lighten($gray, 20%);
+    font-size: 80%;
+    table-layout: auto;
+
+    thead {
+        background: $gray-tint;
+    }
+
+    td,
+    th {
+        padding: $spacing-unit / 2.5;
+        text-align: left;
+    }
+}
