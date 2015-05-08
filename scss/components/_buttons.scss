@@ -6,12 +6,6 @@
 
 button,
 .button {
-    display: inline-block;
-    font-weight: normal;
-    line-height: 1;
-    margin-bottom: $spacing-unit;
-    padding: $spacing-unit / 1.5;
-
     @include button($brand-primary);
 
     &.secondary {
