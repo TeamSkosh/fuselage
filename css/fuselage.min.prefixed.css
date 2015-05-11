@@ -1350,14 +1350,28 @@ fieldset {
 /* line 7, scss/components/_tables.scss */
 table {
   background: #FFF;
-  border: 1px solid #909090;
+  border: 1px solid #d0d0d0;
   font-size: 80%;
-  table-layout: auto; }
-  /* line 13, scss/components/_tables.scss */
+  table-layout: auto;
+  width: 100%; }
+  /* line 14, scss/components/_tables.scss */
+  table caption {
+    font-size: 2.618034rem;
+    font-weight: 100;
+    margin-bottom: 1.047214rem;
+    text-align: left; }
+  /* line 21, scss/components/_tables.scss */
   table thead {
     background: #e9e9e9; }
-  /* line 18, scss/components/_tables.scss */
+  /* line 25, scss/components/_tables.scss */
+  table tr:nth-of-type(even) {
+    background: #f3f3f3; }
+  /* line 30, scss/components/_tables.scss */
   table td, table th {
     padding: 1.047214rem;
     text-align: left; }
+  /* line 35, scss/components/_tables.scss */
+  table th {
+    font-size: 1.820288rem;
+    font-weight: 100; }
 /*# sourceMappingURL=fuselage.min.prefixed.css.map */
