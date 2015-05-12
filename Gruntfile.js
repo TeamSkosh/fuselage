@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                 includePaths: [
                     "scss/components"
                 ],
-                outputStyle: 'expanded',
+                outputStyle: 'compressed',
                 precision: 6,
                 sourceComments: true,
                 sourceMap: true

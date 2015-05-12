@@ -1,12 +1,13 @@
 {
     "name": "fuselage",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "authors": "Skosh Interactive, L.L.C",
     "description": "A sass-based, mobile-first front-end framework aimed at developer productivity and structural composability.",
     "main": [
         "scss/fuselage.scss"
     ],
     "ignore": [
+        "*.map",
         "*.md",
         ".bowerrc",
         ".gitignore",
