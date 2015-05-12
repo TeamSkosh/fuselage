@@ -14,6 +14,10 @@ body {
     font-weight: 200;
     color: $text-color;
     -webkit-text-size-adjust: 100%;
+
+    @media print {
+      font-size: 14px;
+    }
 }
 
 h1, h2, h3, h4, h5, h6, hr,
@@ -34,23 +38,39 @@ small {
   font-weight: 100;
   font-size: modular-scale(6);
   line-height: 1;
+
+  @media print {
+    font-size: modular-scale(4);
+  }
 }
 
 .deck {
   color: lighten($gray, 15%);
   font-size: modular-scale(3);
   line-height: 1.25;
+
+  @media print {
+    font-size: modular-scale(1);
+  }
 }
 
 .byline {
   font-size: modular-scale(2) * 1.25;
   font-weight: normal;
+
+  @media print {
+    font-size: modular-scale(1) * 0.9;
+  }
 }
 
 figcaption,
 .caption {
   color: $gray;
   font-size: modular-scale(2);
+
+  @media print {
+    font-size: modular-scale(1);
+  }
 }
 
 h1 {
@@ -99,9 +119,17 @@ kbd {
 
 pre {
     padding: $spacing-unit;
+    position: relative;
     overflow-x: scroll;
     white-space: pre;
     word-wrap: normal;
+
+    &:after {
+      content: attr(rel);
+      position: absolute;
+      top: $spacing-unit / 2.5;
+      right: $spacing-unit / 2.5;
+    }
 
     > code {
         border: 0;

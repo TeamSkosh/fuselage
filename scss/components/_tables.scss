@@ -1,0 +1,83 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _tables.scss
+
+    Basic table styles
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+table {
+    background: $white;
+    border: 1px solid darken($gray-tint, 10%);
+    font-size: 80%;
+    table-layout: auto;
+    width: 100%;
+
+    caption {
+        font-size: modular-scale(3);
+        font-weight: 100;
+        margin-bottom: $spacing-unit / 2.5;
+        text-align: left;
+    }
+
+    thead,
+    tfoot {
+        background: $gray-tint;
+        display: none;
+    }
+
+    thead {
+        @include mq($medium, $media: "print") {
+            display: table-header-group;
+        }
+    }
+
+    tfoot {
+        @include mq($medium, $media: "print") {
+            display: table-footer-group;
+        }
+    }
+
+    tr:nth-of-type(even) {
+        background: lighten($gray-tint, 4%);
+    }
+
+    td {
+        display: block;
+        font-size: modular-scale(2) * 1.125;
+        padding: $spacing-unit / 2.5;
+        text-align: left;
+
+        &:nth-child(n+2) {
+            padding-top: 0;
+        }
+
+        &:before {
+            content: attr(data-th)":\A";
+            font-size: modular-scale(1) * 1.25;
+            font-weight: 400;
+            white-space: pre;
+
+            @include mq($medium, $media: "print") { display: none; }
+        }
+
+        @include mq($medium, $media: "print") {
+            display: table-cell;
+            font-size: inherit;
+
+            &:nth-child(n+2) {
+                padding-top: ($spacing-unit / 2.5);
+            }
+        }
+    }
+
+    th {
+        font-size: modular-scale(2) * 1.125;
+        font-weight: 100;
+        padding: $spacing-unit / 2.5;
+        text-align: left;
+
+        @media print {
+            font-size: modular-scale(1);
+            font-weight: bold;
+        }
+    }
+}

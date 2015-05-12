@@ -81,7 +81,7 @@
         <a href="#" class="button warn small disabled">Test Button</a>
 
         <a href="#" class="button alert large">Large Alert Button</a>
-        <a href="#" class="button alert large disabled">Disabled Button</a>
+        <a href="#" class="button alert large" disabled>Disabled Button</a>
 
         <h2>Header Level 2</h2>
 
@@ -99,7 +99,7 @@
            <li>Aliquam tincidunt mauris eu risus.</li>
         </ul>
 
-        <pre><code>#header h1 a {
+        <pre rel="CSS"><code>#header h1 a {
     display: block;
     width: 300px;
     height: 80px;
@@ -144,34 +144,83 @@
             <h2>A sub heading which is not as important as the first, but is quite imporant overall</h2>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
             <table>
-                <tbody><tr>
-                    <th>Table Heading</th>
-                    <th>Table Heading</th>
-                </tr>
-                <tr>
-                    <td>table data</td>
-                    <td>table data</td>
-                </tr>
-                <tr>
-                    <td>table data</td>
-                    <td>table data</td>
-                </tr>
-                <tr>
-                    <td>table data</td>
-                    <td>table data</td>
-                </tr>
-                <tr>
-                    <td>table data</td>
-                    <td>table data</td>
-                </tr>
-            </tbody></table>
+                <caption>This is a caption for the table</caption>
+                <thead>
+                    <tr>
+                        <th>Vegetable</th>
+                        <th>Color</th>
+                        <th>Popularity</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-th="Vegetable">Tomato</td>
+                        <td data-th="Color">Red</td>
+                        <td data-th="Popularity">9</td>
+                        <td data-th="Description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean a lectus dui. Sed posuere elit sem, at
+                            eleifend massa dignissim nec.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-th="Vegetable">Summer Squash</td>
+                        <td data-th="Color">Yellow</td>
+                        <td data-th="Popularity">6</td>
+                        <td data-th="Description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean a lectus dui. Sed posuere elit sem, at
+                            eleifend massa dignissim nec.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-th="Vegetable">Pumpkin</td>
+                        <td data-th="Color">Orange</td>
+                        <td data-th="Popularity">5</td>
+                        <td data-th="Description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean a lectus dui. Sed posuere elit sem, at
+                            eleifend massa dignissim nec.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-th="Vegetable">Zucchini</td>
+                        <td data-th="Color">Green</td>
+                        <td data-th="Popularity">7</td>
+                        <td data-th="Description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean a lectus dui. Sed posuere elit sem, at
+                            eleifend massa dignissim nec.
+                        </td>
+                        </tr>
+                    <tr>
+                        <td data-th="Vegetable">Eggplant</td>
+                        <td data-th="Color">Purple</td>
+                        <td data-th="Popularity">2</td>
+                        <td data-th="Description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean a lectus dui. Sed posuere elit sem, at
+                            eleifend massa dignissim nec.
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Vegetable</th>
+                        <th>Color</th>
+                        <th>Popularity</th>
+                        <th>Description</th>
+                    </tr>
+                </tfoot>
+            </table>
 
             <h3>A sub heading which is not as important as the second, but should be used with consideration</h3>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
             <blockquote><p>“Ooh - a blockquote! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.”</p></blockquote>
             <h4>A sub heading which is not as important as the second, but should be used with consideration</h4>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-            <pre><code>#header h1 a {
+            <pre rel="CSS"><code>#header h1 a {
     display: block;
     width: 300px;
     height: 80px;
@@ -385,14 +434,121 @@
 
             <h2>Forms</h2>
 
-            <form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <div class="row">
+                        <div class="column one-whole medium-one-half">
+                             <label for="first-name">First Name
+                                 <input type="text" name="first-name" id="first-name" value="" tabindex="1" placeholder="First Name" />
+                             </label>
+                        </div>
+
+                        <div class="column one-whole medium-one-half">
+                             <label for="last-name">Last Name
+                                 <input type="text" name="last-name" id="last-name" value="Seay" tabindex="1"disabled />
+                             </label>
+                        </div>
+
+                        <div class="column one-whole medium-one-half">
+                             <label for="email">Email
+                                 <input type="email" name="email" id="email" value="" tabindex="1" />
+                             </label>
+                        </div>
+
+                        <div class="column one-whole medium-one-half">
+                             <label for="phone">Phone
+                                 <input type="tel" name="phone" id="phone" value="" tabindex="1" />
+                             </label>
+                        </div>
+
+                        <div class="column one-whole medium-one-half">
+                             <label>Radio Buttons</label>
+
+                             <input type="radio" name="radio-choice" id="radio-choice-1" tabindex="2" value="choice-1" disabled />
+                             <label for="radio-choice-1">Choice 1</label>
+
+                             <input type="radio" name="radio-choice" id="radio-choice-2" tabindex="3" value="choice-2" />
+                             <label for="radio-choice-2">Choice 2</label>
+                        </div>
+
+                        <div class="column one-whole medium-one-half">
+                            <label for="select-choice">Select Dropdown Choice:
+                                <select name="select-choice" id="select-choice" disabled>
+                                    <option value="Choice 1">Choice 1</option>
+                                    <option value="Choice 2">Choice 2</option>
+                                    <option value="Choice 3">Choice 3</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column one-whole">
+                            <label for="textarea">Textarea:
+                                <textarea cols="40" rows="8" name="textarea" id="textarea" readonly></textarea>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column one-whole medium-one-half">
+                            <label for="file">Upload something!
+                                <input type="file" name="file" id="file" />
+                            </label>
+                        </div>
+
+                        <div class="column one-whole medium-one-half">
+                            <label>Agreement</label>
+                            <input type="checkbox" name="checkbox" id="checkbox" />
+                            <label for="checkbox">I accept
+                            </label>
+                        </div>
+                    </div>
+
+                    <input class="button" type="submit" value="Submit" disabled /> or
+                    <input class="button secondary small" type="reset" value="Clear All" />
+                </fieldset>
+
+                <label for="test1">Test1</label>
+                <input id="test1" type="button" value="Input Button">
+
+                <label for="test2">Test1</label>
+                <input id="test2" type="checkbox">
+
+                <input type="color">
+
+                <input type="date">
+
+                <input type="datetime">
+                <input type="datetime-local">
+                <input type="email">
+                <input type="file">
+                <input type="hidden">
+                <input type="image">
+                <input type="month">
+                <input type="number">
+                <input type="password">
+                <input type="radio">
+                <input type="range">
+                <input type="reset">
+                <input type="search">
+                <input type="submit">
+                <input type="tel">
+                <input type="text">
+                <input type="time">
+                <input type="url">
+                <input type="week">
+            </form>
+
+            <form action="">
             <div>
             <input type="hidden" name="hidden field" value="42">
             This is a form containing various fields (with some initial
             values (defaults) set, so that you can see how input text looks
             like without actually typing it):</div>
             <div><label for="but">Button:
-            <button id="but" type="submit" name="foo" value="bar">A cool<br>button</button></label></div>
+            <button id="but" type="submit" name="foo" value="bar">A cool button</button></label></div>
             <div><label for="f0">Reset button:
             <input id="f0" type="reset" name="reset" value="Reset"></label></div>
             <div><label for="f1">Single-line text input field: <input id="f1" name="text" size="20" value="Default text."></label></div>
