@@ -1,0 +1,7 @@
+{
+  "name": "fuselage-docs",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "fuselage": "~0.3.0"
+  }
+}
