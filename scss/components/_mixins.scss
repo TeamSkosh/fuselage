@@ -14,9 +14,19 @@
 
 // Media query setup. Takes media size and optional parameter for "print"
 @mixin mq($media-size, $media: "screen") {
-    @media #{$media} and (min-width: #{$media-size}) {
-        @content;
+    @if $media == "print" {
+        @media #{$media} {
+            @content;
+        }
+        @media screen and (min-width: #{$media-size}) {
+            @content;
+        }
+    } @else {
+        @media #{$media} and (min-width: #{$media-size}) {
+            @content;
+        }
     }
+
 }
 
 // Width calculator
