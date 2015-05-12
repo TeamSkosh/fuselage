@@ -99,9 +99,17 @@ kbd {
 
 pre {
     padding: $spacing-unit;
+    position: relative;
     overflow-x: scroll;
     white-space: pre;
     word-wrap: normal;
+
+    &:after {
+      content: attr(rel);
+      position: absolute;
+      top: $spacing-unit / 2.5;
+      right: $spacing-unit / 2.5;
+    }
 
     > code {
         border: 0;
