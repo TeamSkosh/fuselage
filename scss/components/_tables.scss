@@ -25,13 +25,13 @@ table {
     }
 
     thead {
-        @include mq($medium) {
+        @include mq($medium, $media: "print") {
             display: table-header-group;
         }
     }
 
     tfoot {
-        @include mq($medium) {
+        @include mq($medium, $media: "print") {
             display: table-footer-group;
         }
     }
@@ -56,10 +56,10 @@ table {
             font-weight: 400;
             white-space: pre;
 
-            @include mq($medium) { display: none; }
+            @include mq($medium, $media: "print") { display: none; }
         }
 
-        @include mq($medium) {
+        @include mq($medium, $media: "print") {
             display: table-cell;
             font-size: inherit;
 
@@ -74,5 +74,10 @@ table {
         font-weight: 100;
         padding: $spacing-unit / 2.5;
         text-align: left;
+
+        @media print {
+            font-size: modular-scale(1);
+            font-weight: bold;
+        }
     }
 }
