@@ -50,12 +50,7 @@ module.exports = function(grunt) {
                 outputStyle: 'expanded',
                 sourceMap: true
             },
-            fuselage: {
-                files: {
-                    '_site/css/fuselage.min.css': '_sass/fuselage.scss'
-                }
-            },
-            global: {
+            dist: {
                 files: {
                     '_site/css/main.min.css': '_sass/main.scss'
                 }
@@ -73,8 +68,8 @@ module.exports = function(grunt) {
 
         watch: {
             styles: {
-                files: ['_sass/_components/*.scss', '_sass/*.scss'],
-                tasks: ['sass:global', 'sass:fuselage']
+                files: ['_sass/components/*.scss', '_sass/*.scss'],
+                tasks: ['sass']
             }
         }
     });
@@ -89,8 +84,7 @@ module.exports = function(grunt) {
         'newer:copy:jquery',
         'newer:copy:fuselage',
         'shell:jekyllBuild',
-        'sass:fuselage',
-        'sass:global'
+        'sass'
     ]);
 
     grunt.registerTask('default', ['build']);
