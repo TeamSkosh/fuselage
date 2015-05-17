@@ -1,0 +1,26 @@
+/**
+ * Hero
+ */
+.hero {
+    background: $gray-tint;
+    margin-top: $spacing-unit;
+    padding: $spacing-unit 0;
+
+    h1 {
+        color: $brand-secondary;
+        font-size: modular-scale(4);
+
+        @include mq($small) {
+            font-size: modular-scale(5);
+        }
+    }
+
+    img {
+        margin-top: $spacing-unit;
+        width: 100%;
+    }
+
+    .button {
+        margin-bottom: 0;
+    }
+}

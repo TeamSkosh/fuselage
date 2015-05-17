@@ -4,11 +4,13 @@
 
     <body>
         {% include header.html %}
+        {% if page.title == "Home" %}
+            {% include hero.html %}
+        {% endif %}
 
         <div class="page-content">
             <div class="container">
                 {{ content }}
-                <p>{{ sites.pages }}</p>
             </div>
         </div>
 

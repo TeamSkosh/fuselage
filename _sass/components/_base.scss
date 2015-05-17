@@ -1,82 +1,29 @@
+/**
+ * Base
+ */
 .container {
     margin: 0 auto;
     max-width: 1000px;
+    padding: 0 $spacing-unit / 2;
 
     @include clearfix;
 }
 
-/**
- * Site header
- */
-.site-header {
+hr {
     border-bottom: 1px solid $gray-tint;
-    min-height: 60px;
-
-    .container {
-        position: relative;
-    }
+    border-top: none;
 }
 
-.site-title {
-    color: $brand-primary;
-    float: left;
-    font-size: modular-scale(3);
-    line-height: 60px;
-    margin-bottom: 0;
+/**
+ * Home
+ */
+.feature-icon {
+    padding: 0 $spacing-unit;
 
     img {
-        max-height: 40px;
-    }
-}
-
-.site-nav {
-    list-style: none;
-    position: absolute;
-    right: 0;
-    text-align: right;
-    top: 9px;
-
-    li {
-        display: none;
-    }
-
-    .menu-icon {
-        display: block;
-        float: right;
-        width: 30px;
-        height: 33px;
-        line-height: 0;
-        padding-top: 10px;
-        text-align: center;
-
-        svg {
-            width: 27px;
-            height: 22px;
-
-            path {
-                fill: $brand-secondary;
-            }
-        }
-    }
-
-    .page-link {
-        display: block;
-        padding: 5px 10px;
-    }
-
-    @include mq($medium) {
-        .menu-icon {
-            display: none;
-        }
-
-        li {
-            display: inline-block;
-            float: right;
-
-            &:not(:first-child) {
-                margin-left: $spacing-unit / 2;
-            }
-        }
+        margin-bottom: $spacing-unit / 2;
+        max-height: 140px;
+        width: 100%;
     }
 }
 
@@ -84,6 +31,10 @@
  * Icons
  */
 .icon {
+
+    &:hover {
+        border-bottom: none;
+    }
 
     > svg {
         display: inline-block;

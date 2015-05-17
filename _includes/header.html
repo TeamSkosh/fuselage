@@ -3,7 +3,7 @@
 
         {% if page.title == "Home" %}
             <a class="site-title" href="https://github.com/teamskosh">
-                <img src="{{ "/img/skosh-full-horiz-main-rgb.svg" | prepend: site.baseurl }}" alt="Skosh Interactive Logo">
+                <img src="{{ '/img/skosh-full-horiz-main-rgb.svg' | prepend: site.baseurl }}" alt="Skosh Interactive Logo">
             </a>
         {% else %}
             <a class="site-title" href="{{ site.baseurl }}/">
@@ -24,11 +24,20 @@
 
             {% for node in site.pages %}
                 {% if node.layout == "page" %}
+                    {% assign url_parts = node.url | split: "/" %}
+                    {% if url_parts.last == "index.html" %}
+                    <li>
+                        <a class="button small" href='/{{ url_parts[1] }}'>
+                            {{ node.title }}
+                        </a>
+                    </li>
+                    {% else %}
                     <li>
                         <a class="button small" href='{{ node.url }}'>
                             {{ node.title }}
                         </a>
                     </li>
+                    {% endif %}
                 {% endif %}
             {% endfor %}
         </nav>
