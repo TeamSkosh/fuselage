@@ -1,0 +1,7 @@
+{% if page.component_list %}
+    <ul class="components">
+    {% for item in page.component_list %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}

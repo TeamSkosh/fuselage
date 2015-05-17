@@ -1,6 +1,11 @@
 /**
  * Page content
  */
+ .page-title {
+    color: $brand-secondary;
+    font-weight: 100;
+ }
+
 .page-content {
     padding: $spacing-unit 0;
 }
