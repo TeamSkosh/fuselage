@@ -1,7 +1,14 @@
-{% if page.component_list %}
-    <ul class="components">
-    {% for item in page.component_list %}
-            <li>{{ item }}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
+{% assign sorted_posts = site.posts | sort: "order" %}
+<ul class="components">
+{% for component in sorted_posts %}
+        <li>
+            {% if component.url == page.url %}
+                <a href="{{ component.url | prepend: site.baseurl }}" class="active">
+            {% else %}
+                <a href="{{ component.url | prepend: site.baseurl }}">
+            {% endif %}
+                {{ component.title }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

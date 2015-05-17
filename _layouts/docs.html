@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="row">
+    <section class="one-whole medium-one-fourth column">
+        {% include component-list.html %}
+    </section><!-- /.column -->
+
+    <section class="one-whole medium-two-thirds column">
+        <h2 class="page-title">
+            Docs <br>
+            <small>
+                <span class="primary-text">➜</span>
+                {{ page.title }}
+            </small>
+        </h2>
+
+        <article class="post-content">
+            {{ content }}
+
+            <p class="post-meta">
+                {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+            </p>
+        </article>
+    </section><!-- /.column -->
+</div><!-- /.row -->

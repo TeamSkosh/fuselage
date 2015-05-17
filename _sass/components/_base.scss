@@ -47,3 +47,17 @@ hr {
         }
     }
 }
+
+/**
+ * Component List
+ */
+.components {
+    background: $gray-tint;
+    list-style: none;
+    margin-top: 0;
+    padding: $spacing-unit / 2;
+
+    a.active {
+        @include text-link($brand-secondary);
+    }
+}
