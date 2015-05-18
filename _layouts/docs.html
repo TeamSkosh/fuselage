@@ -2,20 +2,21 @@
 layout: default
 ---
 
+<h2 class="page-title">
+    Docs
+    <small>
+        <span class="primary-text">➜</span>
+        {{ page.title }}
+    </small>
+</h2>
+
 <div class="row">
     <section class="one-whole medium-one-fourth column">
-        {% include component-list.html %}
+        {% include list-info.html %}
+        {% include list-components.html %}
     </section><!-- /.column -->
 
-    <section class="one-whole medium-two-thirds column">
-        <h2 class="page-title">
-            Docs <br>
-            <small>
-                <span class="primary-text">➜</span>
-                {{ page.title }}
-            </small>
-        </h2>
-
+    <section class="one-whole medium-three-fourths column">
         <article class="post-content">
             {{ content }}
 

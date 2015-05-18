@@ -6,22 +6,115 @@ order: 1
 permalink: /docs/buttons
 categories: docs component
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Buttons are a nice way to draw attention an important link or call to action. Fuselage supplies a default style to its buttons, and makes it easy to customize them.
 
-Jekyll also offers powerful support for code snippets:
+<hr>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+### Simple Button
+
+Merely supply the `button` class to an `anchor` element, and you have a button.
+
+##### Output
+
+<a href="#" class="button">Simple</a>
+
+##### HTML
+
+{% highlight html %}
+<a href="#" class="button">Simple</a>
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+<hr>
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+### Button Colors
+
+Utilize the [branding variables]({{ "/docs/variables" | prepend: base_url }}) to add color to your buttons.
+
+##### Output
+
+<a href="#" class="button secondary">Secondary</a>
+<a href="#" class="button tertiary">Tertiary</a>
+<a href="#" class="button info">Info</a>
+<a href="#" class="button success">Success</a>
+<a href="#" class="button warn">Warn</a>
+<a href="#" class="button alert">Alert</a>
+
+##### HTML
+
+{% highlight html %}
+<a href="#" class="button secondary">Secondary</a>
+<a href="#" class="button tertiary">Tertiary</a>
+<a href="#" class="button info">Info</a>
+<a href="#" class="button success">Success</a>
+<a href="#" class="button warn">Warn</a>
+<a href="#" class="button alert">Alert</a>
+{% endhighlight %}
+
+<hr>
+
+### Button Sizes
+
+Tack on a class `tiny`, `small`, or `large` to adjust the size of your buttons.
+
+##### Output
+
+<a href="#" class="button tiny">Tiny</a>
+<a href="#" class="button small">Small</a>
+<a href="#" class="button">Default</a>
+<a href="#" class="button large">Large</a>
+
+##### HTML
+
+{% highlight html %}
+<a href="#" class="button tiny">Tiny</a>
+<a href="#" class="button small">Small</a>
+<a href="#" class="button">Default</a>
+<a href="#" class="button large">Large</a>
+{% endhighlight %}
+
+<hr>
+
+### Rounded &amp; Disabled
+
+Add the class `rounded` for a border radius, and the class *or attribute* `disabled` for disabled buttons.
+
+##### Output
+
+<a href="#" class="button rounded">Rounded</a>
+<a href="#" class="button disabled">Disabled</a>
+<a href="#" class="button" disabled>Disabled (Attribute)</a>
+
+##### HTML
+
+{% highlight html %}
+<a href="#" class="button rounded">Rounded</a>
+<a href="#" class="button disabled">Disabled</a>
+<a href="#" class="button" disabled>Disabled (Attribute)</a>
+{% endhighlight %}
+
+<hr>
+
+### Use the Mixin
+
+Feel free to leverage the button mixin to meet your needs.
+
+{% include mixin-button.html %}
+
+Here's an example.
+
+##### Output
+
+<a href="#" class="button test-button">Test</a>
+<a href="#" class="button test-button2">Test2</a>
+
+##### SCSS
+
+{% highlight scss %}
+.test-button {
+    @include button(#5AD);
+}
+.test-button2 {
+    @include button(#CABB1E, $reverse: true);
+}
+{% endhighlight %}

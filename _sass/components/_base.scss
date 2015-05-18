@@ -49,15 +49,8 @@ hr {
 }
 
 /**
- * Component List
+ * Mixin Definitions
  */
-.components {
-    background: $gray-tint;
-    list-style: none;
-    margin-top: 0;
-    padding: $spacing-unit / 2;
-
-    a.active {
-        @include text-link($brand-secondary);
-    }
+.mixin-title {
+    font-size: modular-scale(3);
 }

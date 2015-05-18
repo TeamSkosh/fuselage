@@ -1,0 +1,24 @@
+/**
+ * Sidebar
+ */
+.sidebar {
+    background: $gray-tint;
+    list-style: none;
+    margin-top: 0;
+    padding: $spacing-unit / 2;
+
+    .sidebar-title {
+        border-bottom: 1px solid $gray;
+        font-size: modular-scale(1) * 1.25;
+        margin-bottom: $spacing-unit / 3;
+        padding-bottom: $spacing-unit / 3;
+    }
+
+    a.active {
+        @include text-link($brand-secondary);
+
+        &:after {
+            content: "➜";
+        }
+    }
+}

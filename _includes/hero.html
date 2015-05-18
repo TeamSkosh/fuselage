@@ -3,7 +3,8 @@
         <div class="row">
             <div class="one-whole medium-one-half column">
                 <h1>Welcome to Fuselage</h1>
-                <a href="/docs" class="button primary reverse">Get Started</a>
+                <a href="{{ '/docs' | prepend: base_url }}" class="button primary">Get Started</a>
+                <a href="https://github.com/teamskosh/fuselage" class="button tiny info">View on GitHub</a>
             </div><!-- /.column -->
             <div class="one-whole medium-one-half column">
                 <img src="{{ "/img/fuselage-drawing.svg" | prepend: site.baseurl }}" alt="Fuselage Drawing">

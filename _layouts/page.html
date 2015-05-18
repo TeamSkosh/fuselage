@@ -4,8 +4,12 @@ layout: default
 
 <h2 class="page-title">
     {{ page.title }}
+    {% if post.title %}
+        <small>
+            <span class="primary-text">➜</span>
+            {{ post.title }}
+        </small>
+    {% endif %}
 </h2>
 
-<section class="page-content">
-    {{ content}}
-</section>
+{{ content}}

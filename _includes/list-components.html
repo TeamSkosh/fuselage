@@ -1,5 +1,6 @@
 {% assign sorted_posts = site.posts | sort: "order" %}
-<ul class="components">
+<ul class="sidebar">
+    <li class="sidebar-title">Components</li>
 {% for component in sorted_posts %}
         <li>
             {% if component.url == page.url %}
