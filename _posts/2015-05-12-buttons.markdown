@@ -99,7 +99,7 @@ Add the class `rounded` for a border radius, and the class *or attribute* `disab
 
 Feel free to leverage the button mixin to meet your needs.
 
-{% include mixin-button.html %}
+{% include def-mixin-button.html %}
 
 Here's an example.
 

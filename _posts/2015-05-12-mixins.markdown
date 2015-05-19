@@ -11,4 +11,5 @@ Fuselage comes with some handy mixins right out of the box. This is how you use 
 
 <hr>
 
-{% include mixin-button.html %}
+{% include def-mixin-button.html %}
+{% include def-mixin-clearfix.html %}

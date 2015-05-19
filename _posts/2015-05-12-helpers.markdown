@@ -8,3 +8,7 @@ categories: docs component
 ---
 
 This is a collection of helpful classes to give you a hand during tricky situations.
+
+<hr>
+
+{% include def-component-helpers.html %}
