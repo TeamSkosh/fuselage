@@ -17,12 +17,3 @@
     font-size: modular-scale(1) * 1.25;
     color: $gray;
 }
-
-// Documentation-specific
-.test-button {
-    @include button(#5AD);
-}
-
-.test-button2 {
-    @include button(#CABB1E, $reverse: true);
-}
