@@ -7,4 +7,8 @@ permalink: /docs/typography
 categories: docs component
 ---
 
-Built on a [Modular Scale](http://www.modularscale.com/) with thoughtful typogrphic defaults, Fuselage helps you get your message across more effectively.
+Built on a [Modular Scale](http://www.modularscale.com/) with thoughtful typographic defaults, Fuselage helps you get your message across more effectively.
+
+<hr>
+
+{% include def-component-typography.html %}
