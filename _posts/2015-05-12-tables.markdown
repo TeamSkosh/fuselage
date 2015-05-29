@@ -8,3 +8,152 @@ categories: docs component
 ---
 
 Fuselage elegantly handles tables across all device size, and this is how to use them.
+
+<hr>
+
+### Building Responsive Tables
+
+Tables are responsive by default in fuselage, and display in its responsive state in `xsmall` and `small` media sizes. It is important to include `data-th` attribute in order to have each field labelled correctly in the responsive view.
+
+##### Output
+
+<table>
+    <caption>This is a caption for the table</caption>
+    <thead>
+        <tr>
+            <th>Vegetable</th>
+            <th>Color</th>
+            <th>Popularity</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-th="Vegetable">Tomato</td>
+            <td data-th="Color">Red</td>
+            <td data-th="Popularity">9</td>
+            <td data-th="Description">
+                Consectetur adipiscing elit. Aenean a lectus dui. Sed posuere elit sem, at eleifend massa dignissim nec.
+            </td>
+        </tr>
+        <tr>
+            <td data-th="Vegetable">Summer Squash</td>
+            <td data-th="Color">Yellow</td>
+            <td data-th="Popularity">6</td>
+            <td data-th="Description">
+                Aenean a lectus dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </td>
+        </tr>
+        <tr>
+            <td data-th="Vegetable">Pumpkin</td>
+            <td data-th="Color">Orange</td>
+            <td data-th="Popularity">5</td>
+            <td data-th="Description">
+                Sed posuere elit sem, at
+                eleifend massa dignissim nec.
+            </td>
+        </tr>
+        <tr>
+            <td data-th="Vegetable">Zucchini</td>
+            <td data-th="Color">Green</td>
+            <td data-th="Popularity">7</td>
+            <td data-th="Description">
+                Lorem ipsum dolor sit amet, at
+                eleifend massa dignissim nec.
+            </td>
+            </tr>
+        <tr>
+            <td data-th="Vegetable">Eggplant</td>
+            <td data-th="Color">Purple</td>
+            <td data-th="Popularity">2</td>
+            <td data-th="Description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean a lectus dui.
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Vegetable</th>
+            <th>Color</th>
+            <th>Popularity</th>
+            <th>Description</th>
+        </tr>
+    </tfoot>
+</table>
+
+##### HTML
+{% highlight html %}
+<table>
+    <caption>This is a caption for the table</caption>
+    <thead>
+        <tr>
+            <th>Vegetable</th>
+            <th>Color</th>
+            <th>Popularity</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-th="Vegetable">Tomato</td>
+            <td data-th="Color">Red</td>
+            <td data-th="Popularity">9</td>
+            <td data-th="Description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean a lectus dui. Sed posuere elit sem, at
+                eleifend massa dignissim nec.
+            </td>
+        </tr>
+        <tr>
+            <td data-th="Vegetable">Summer Squash</td>
+            <td data-th="Color">Yellow</td>
+            <td data-th="Popularity">6</td>
+            <td data-th="Description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean a lectus dui. Sed posuere elit sem, at
+                eleifend massa dignissim nec.
+            </td>
+        </tr>
+        <tr>
+            <td data-th="Vegetable">Pumpkin</td>
+            <td data-th="Color">Orange</td>
+            <td data-th="Popularity">5</td>
+            <td data-th="Description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean a lectus dui. Sed posuere elit sem, at
+                eleifend massa dignissim nec.
+            </td>
+        </tr>
+        <tr>
+            <td data-th="Vegetable">Zucchini</td>
+            <td data-th="Color">Green</td>
+            <td data-th="Popularity">7</td>
+            <td data-th="Description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean a lectus dui. Sed posuere elit sem, at
+                eleifend massa dignissim nec.
+            </td>
+            </tr>
+        <tr>
+            <td data-th="Vegetable">Eggplant</td>
+            <td data-th="Color">Purple</td>
+            <td data-th="Popularity">2</td>
+            <td data-th="Description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean a lectus dui. Sed posuere elit sem, at
+                eleifend massa dignissim nec.
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Vegetable</th>
+            <th>Color</th>
+            <th>Popularity</th>
+            <th>Description</th>
+        </tr>
+    </tfoot>
+</table>
+{% endhighlight %}
+
