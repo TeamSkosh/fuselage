@@ -11,4 +11,4 @@ Fuselage comes with sensible defaults, but feel free to customize them using the
 
 <hr>
 
-### Fuselage Settings
+{% include def-component-variables.html %}
