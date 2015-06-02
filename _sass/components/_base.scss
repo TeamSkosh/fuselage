@@ -19,11 +19,18 @@ hr {
  */
 .feature-icon {
     padding: 0 $spacing-unit;
+    text-align: center;
 
     img {
         margin-bottom: $spacing-unit / 2;
         max-height: 140px;
         width: 100%;
+    }
+
+    @include mq($medium) {
+        p {
+            text-align: left;
+        }
     }
 }
 
