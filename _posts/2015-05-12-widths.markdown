@@ -9,6 +9,4 @@ categories: docs component
 
 Every good framework has a useful grid, and Fuselage is no different. Its mobile-first, nestable grid system, referred to as *widths* gives you a robust skeleton to hold your project together.
 
-<hr>
-
-
+{% include def-component-widths.html %}

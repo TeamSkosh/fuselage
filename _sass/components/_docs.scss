@@ -35,3 +35,18 @@
 .test-form {
     margin-bottom: $spacing-unit;
 }
+
+// Widths
+.test-widths {
+    .row {
+        .column p {
+            background: $brand-primary;
+            color: $white;
+            padding: $spacing-unit / 4;
+        }
+
+        .row .column p {
+            background: $brand-secondary;
+        }
+    }
+}
