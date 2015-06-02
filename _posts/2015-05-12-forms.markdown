@@ -1,0 +1,185 @@
+---
+layout: docs
+title:  "Forms"
+date:   2015-05-12 15:19:47
+order: 3
+permalink: /docs/forms
+categories: docs component
+---
+
+Collecting data is important, and Fuselage can help you do it more easily across all device sizes.
+
+<hr>
+
+### Building Forms
+
+Combine HTML5 form elements with [widths (grid)]({{ "/docs/widths" | prepend: base_url }}) in order to put together robust, responsive forms.
+
+##### Output
+
+<form class="test-form">
+    <fieldset>
+        <legend>Account Information</legend>
+        <div class="row">
+            <div class="column one-whole medium-one-third">
+                 <label for="name">Name
+                     <input type="text" name="name" id="name" tabindex="1" placeholder=".column.medium-one-third">
+                 </label>
+            </div>
+
+            <div class="column one-whole medium-one-third">
+                 <label for="email">Email
+                     <input type="email" name="email" id="email" tabindex="2" placeholder=".column.medium-one-half">
+                 </label>
+            </div>
+
+            <div class="column one-whole medium-one-third">
+                 <label for="phone">Phone
+                     <input type="tel" name="phone" id="phone" value="" tabindex="3" placeholder=".column.medium-one-half (disabled)" disabled>
+                 </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column one-whole medium-one-fourth">
+                <label for="select-choice">Pick Something
+                    <select name="select-choice" id="select-choice" tab-index="4">
+                        <option value="Choice 1">Choice 1</option>
+                        <option value="Choice 2">Choice 2</option>
+                        <option value="Choice 3">Choice 3</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="column one-whole medium-one-fourth">
+                <label for="file">Upload something!
+                    <input type="file" name="file" id="file" tabindex="5">
+                </label>
+            </div>
+
+            <div class="column one-whole medium-one-half">
+                 <label for="occupation">Occupation
+                     <input type="text" name="occupation" id="occupation" value="" tabindex="6" placeholder=".column.medium-one-half (disabled)" disabled>
+                 </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column one-whole medium-one-half">
+                 <label>Radio Buttons</label>
+
+                 <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" tabindex="7" disabled>
+                 <label for="radio-choice-1">Choice 1</label>
+
+                 <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" tabindex="8">
+                 <label for="radio-choice-2">Choice 2</label>
+
+                 <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" tabindex="9">
+                 <label for="radio-choice-3">Choice 3</label>
+            </div>
+
+            <div class="column one-whole medium-one-fourth">
+                <label>Agreement</label>
+                <input type="checkbox" name="checkbox" id="checkbox" tabindex="9">
+                <label for="checkbox">I accept
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column one-whole">
+                <label for="textarea">Textarea:
+                    <textarea cols="40" rows="4" name="textarea" id="textarea" tabindex="10" readonly>.column.one-whole (readonly)</textarea>
+                </label>
+            </div>
+        </div>
+
+        <input class="button" type="submit" value="Submit"> or
+        <input class="button secondary small" type="reset" value="Clear All">
+    </fieldset>
+</form>
+
+##### HTML
+
+{% highlight html %}
+<form>
+    <fieldset>
+        <legend>Account Information</legend>
+        <div class="row">
+            <div class="column one-whole medium-one-third">
+                 <label>Name
+                     <input type="text">
+                 </label>
+            </div>
+
+            <div class="column one-whole medium-one-third">
+                 <label>Email
+                     <input type="email">
+                 </label>
+            </div>
+
+            <div class="column one-whole medium-one-third">
+                 <label>Phone
+                     <input type="tel" disabled>
+                 </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column one-whole medium-one-fourth">
+                <label>Pick Something
+                    <select>
+                        <option>Choice 1</option>
+                        <option>Choice 2</option>
+                        <option>Choice 3</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="column one-whole medium-one-fourth">
+                <label>Upload something!
+                    <input type="file">
+                </label>
+            </div>
+
+            <div class="column one-whole medium-one-half">
+                 <label>Occupation
+                     <input disabled>
+                 </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column one-whole medium-one-half">
+                 <label>Radio Buttons</label>
+
+                 <input type="radio" name="radio-choice" disabled>
+                 <label for="radio-choice-1">Choice 1</label>
+
+                 <input type="radio" name="radio-choice"\>
+                 <label for="radio-choice-2">Choice 2</label>
+
+                 <input type="radio" name="radio-choice">
+                 <label for="radio-choice-3">Choice 3</label>
+            </div>
+
+            <div class="column one-whole medium-one-fourth">
+                <label>Agreement</label>
+                <input type="checkbox">
+                <label for="checkbox">I accept</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column one-whole">
+                <label for="textarea">Textarea:
+                    <textarea cols="40" rows="4" name="textarea" id="textarea" tabindex="10" readonly>.column.one-whole (readonly)</textarea>
+                </label>
+            </div>
+        </div>
+
+        <input class="button" type="submit" value="Submit"> or
+        <input class="button secondary small" type="reset" value="Clear All">
+    </fieldset>
+</form>
+{% endhighlight %}

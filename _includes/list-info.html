@@ -1,0 +1,12 @@
+<ul class="sidebar">
+    <li class="sidebar-title">Info</li>
+    <li>
+        {% if page.url == "/docs/index.html" %}
+            <a href="{{ '/docs' | prepend: site.baseurl }}" class="active">
+        {% else %}
+            <a href="{{ '/docs' | prepend: site.baseurl }}">
+        {% endif %}
+            Getting Started
+        </a>
+    </li>
+</ul>

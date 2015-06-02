@@ -1,0 +1,140 @@
+<h3>Using Widths</h3>
+
+<p>Create and element with the <code>.row</code> class, and add additional elements within it with the <code>.column</code> class. Each of these columns are assigned namespaced widths. <strong>NOTE</strong> If no namespaced is provided, i.e `one-half`, the element will be given this width in the smallest media size. Remember, mobile-first!</p>
+
+<hr>
+
+<h5>Output</h5>
+
+<div class="test-widths">
+    <div class="row">
+        <div class="column one-whole medium-one-half large-one-third">
+            <p>a</p>
+        </div><!-- /.column -->
+
+        <div class="column one-whole medium-one-half large-one-third">
+            <p>b</p>
+        </div><!-- /.column -->
+
+        <div class="column one-whole large-one-third">
+            <p>c</p>
+        </div><!-- /.column -->
+    </div><!-- /.row -->
+
+    <div class="row">
+        <div class="column one-whole medium-three-fourths large-one-sixth">
+            <p>x</p>
+        </div><!-- /.column -->
+
+        <div class="column one-half medium-one-eigth large-one-half">
+            <p>y</p>
+        </div><!-- /.column -->
+
+        <div class="column one-half medium-one-eigth large-one-third">
+            <p>z</p>
+        </div><!-- /.column -->
+    </div><!-- /.row -->
+</div>
+
+
+<h5>HTML</h5>
+
+{% highlight html %}
+<div class="test-widths">
+    <div class="row">
+        <div class="column one-whole medium-one-half large-one-third">
+            <p>a</p>
+        </div><!-- /.column -->
+        <div class="column one-whole medium-one-half large-one-third">
+            <p>b</p>
+        </div><!-- /.column -->
+        <div class="column one-whole large-one-third">
+            <p>c</p>
+        </div><!-- /.column -->
+    </div><!-- /.row -->
+    <div class="row">
+        <div class="column one-whole medium-three-fourths large-one-sixth">
+            <p>x</p>
+        </div><!-- /.column -->
+        <div class="column one-half medium-one-eigth large-one-half">
+            <p>y</p>
+        </div><!-- /.column -->
+        <div class="column one-half medium-one-eigth large-one-third">
+            <p>z</p>
+        </div><!-- /.column -->
+    </div><!-- /.row -->
+</div>
+{% endhighlight %}
+
+<h3>Nesting Widths</h3>
+
+<p>Feel free to nest widths as many times as you'd need to. But for your users'
+collective sakes, please exercise judgment!</p>
+
+<hr>
+
+<h5>Output</h5>
+
+<div class="test-widths">
+    <div class="row">
+        <div class="column one-whole medium-one-half large-two-thirds">
+            <p>a</p>
+
+            <div class="row">
+                <div class="column one-whole large-one-third">
+                    <p>a.a</p>
+                </div><!-- /.row -->
+
+                <div class="column one-whole large-two-thirds">
+                    <p>a.b</p>
+                </div><!-- /.row -->
+            </div><!-- /.row -->
+        </div><!-- /.column -->
+
+        <div class="column one-whole medium-one-half large-one-third">
+            <p>b</p>
+
+            <div class="row">
+                <div class="column one-half large-one-third">
+                    <p>b.a</p>
+                </div><!-- /.row -->
+
+                <div class="column one-half large-two-thirds">
+                    <p>b.b</p>
+                </div><!-- /.row -->
+            </div><!-- /.row -->
+        </div><!-- /.column -->
+    </div><!-- /.row -->
+</div>
+
+
+<h5>HTML</h5>
+
+{% highlight html %}
+<div class="test-widths">
+    <div class="row">
+        <div class="column one-whole medium-one-half large-two-thirds">
+            <p>a</p>
+            <div class="row">
+                <div class="column one-whole large-one-third">
+                    <p>a.a</p>
+                </div><!-- /.row -->
+                <div class="column one-whole large-two-thirds">
+                    <p>a.b</p>
+                </div><!-- /.row -->
+            </div><!-- /.row -->
+        </div><!-- /.column -->
+        <div class="column one-whole medium-one-half large-one-third">
+            <p>b</p>
+            <div class="row">
+                <div class="column one-half large-one-third">
+                    <p>b.a</p>
+                </div><!-- /.row -->
+                <div class="column one-half large-two-thirds">
+                    <p>b.b</p>
+                </div><!-- /.row -->
+            </div><!-- /.row -->
+        </div><!-- /.column -->
+    </div><!-- /.row -->
+</div>
+{% endhighlight %}

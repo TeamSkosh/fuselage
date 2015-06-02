@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<h2 class="page-title">
+    Documentation
+    <small>
+        <span class="primary-text">➜</span>
+        {{ page.title }}
+    </small>
+</h2>
+
+<div class="row">
+    <section class="one-whole medium-one-fourth column">
+        {% include list-info.html %}
+        {% include list-components.html %}
+    </section><!-- /.column -->
+
+    <section class="one-whole medium-three-fourths column">
+        <article class="post-content">
+            {{ content }}
+
+            <p class="post-meta">
+                {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+            </p>
+        </article>
+    </section><!-- /.column -->
+</div><!-- /.row -->

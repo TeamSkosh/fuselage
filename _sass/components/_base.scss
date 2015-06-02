@@ -1,0 +1,67 @@
+/**
+ * Base
+ */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 $spacing-unit / 2;
+
+    @include clearfix;
+}
+
+hr {
+    border-bottom: 1px solid $gray-tint;
+    border-top: none;
+}
+
+/**
+ * Home
+ */
+.feature-icon {
+    padding: 0 $spacing-unit;
+    text-align: center;
+
+    img {
+        margin-bottom: $spacing-unit / 2;
+        max-height: 140px;
+        width: 100%;
+    }
+
+    @include mq($medium) {
+        p {
+            text-align: left;
+        }
+    }
+}
+
+/**
+ * Icons
+ */
+.icon {
+
+    &:hover {
+        border-bottom: none;
+    }
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $gray;
+        }
+    }
+}
+
+/**
+ * Definitions
+ */
+.def-title {
+    font-size: modular-scale(3);
+}
+
+.def-options {
+    list-style: none;
+}

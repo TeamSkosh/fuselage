@@ -1,0 +1,48 @@
+---
+layout: docs
+title:  "Debugger"
+date:   2015-05-12 15:19:47
+order: 2
+permalink: /docs/debug
+categories: docs component
+---
+
+Here are some handy styles for debugging your project. You're welcome :)
+
+<hr>
+
+### How to Enable Debug
+
+In the `_settings.scss` file, set `$gimme-debug: true`. In addition to including the styles, debug will output the current modular scale to the command line when you compile.
+
+##### Output
+
+<div class="test-debug">
+    <p>Enjoy this awesome <strong>Lorem Ipsum</strong>!</p>
+    <ol>
+        <li>Aliquam tincidunt mauris eu risus.
+            <ol>
+                <li>Lorem ipsum dolor sit amet, <a href="#">consectetuer</a> adipiscing elit.</li>
+                <li>Aliquam tincidunt mauris eu risus.</li>
+            </ol>
+        </li>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+    </ol>
+</div>
+
+##### HTML
+
+{% highlight html %}
+<p>Enjoy this awesome <strong>Lorem Ipsum</strong>!</p>
+<ol>
+    <li>Aliquam tincidunt mauris eu risus.
+        <ol>
+            <li>Lorem ipsum dolor sit amet, <a href="#">consectetuer</a> adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+        </ol>
+    </li>
+    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+</ol>
+{% endhighlight %}
+
+<hr>

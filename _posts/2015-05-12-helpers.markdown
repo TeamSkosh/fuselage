@@ -1,0 +1,14 @@
+---
+layout: docs
+title:  "Helpers"
+date:   2015-05-12 15:19:47
+order: 4
+permalink: /docs/helpers
+categories: docs component
+---
+
+This is a collection of helpful classes to give you a hand during tricky situations.
+
+<hr>
+
+{% include def-component-helpers.html %}

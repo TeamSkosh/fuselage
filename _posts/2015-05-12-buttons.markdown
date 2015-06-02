@@ -1,0 +1,120 @@
+---
+layout: docs
+title:  "Buttons"
+date:   2015-05-12 15:19:47
+order: 1
+permalink: /docs/buttons
+categories: docs component
+---
+
+Buttons are a nice way to draw attention an important link or call to action. Fuselage supplies a default style to its buttons, and makes it easy to customize them.
+
+<hr>
+
+### Simple Button
+
+Merely supply the `button` class to an `anchor` element, and you have a button.
+
+##### Output
+
+<a href="#" class="button">Simple</a>
+
+##### HTML
+
+{% highlight html %}
+<a href="#" class="button">Simple</a>
+{% endhighlight %}
+
+<hr>
+
+### Button Colors
+
+Utilize the [branding variables]({{ "/docs/variables" | prepend: base_url }}) to add color to your buttons.
+
+##### Output
+
+<a href="#" class="button secondary">Secondary</a>
+<a href="#" class="button tertiary">Tertiary</a>
+<a href="#" class="button info">Info</a>
+<a href="#" class="button success">Success</a>
+<a href="#" class="button warn">Warn</a>
+<a href="#" class="button alert">Alert</a>
+
+##### HTML
+
+{% highlight html %}
+<a href="#" class="button secondary">Secondary</a>
+<a href="#" class="button tertiary">Tertiary</a>
+<a href="#" class="button info">Info</a>
+<a href="#" class="button success">Success</a>
+<a href="#" class="button warn">Warn</a>
+<a href="#" class="button alert">Alert</a>
+{% endhighlight %}
+
+<hr>
+
+### Button Sizes
+
+Tack on a class `tiny`, `small`, or `large` to adjust the size of your buttons.
+
+##### Output
+
+<a href="#" class="button tiny">Tiny</a>
+<a href="#" class="button small">Small</a>
+<a href="#" class="button">Default</a>
+<a href="#" class="button large">Large</a>
+
+##### HTML
+
+{% highlight html %}
+<a href="#" class="button tiny">Tiny</a>
+<a href="#" class="button small">Small</a>
+<a href="#" class="button">Default</a>
+<a href="#" class="button large">Large</a>
+{% endhighlight %}
+
+<hr>
+
+### Rounded &amp; Disabled
+
+Add the class `rounded` for a border radius, and the class *or attribute* `disabled` for disabled buttons.
+
+##### Output
+
+<a href="#" class="button rounded">Rounded</a>
+<a href="#" class="button disabled">Disabled</a>
+<a href="#" class="button" disabled>Disabled (Attribute)</a>
+
+##### HTML
+
+{% highlight html %}
+<a href="#" class="button rounded">Rounded</a>
+<a href="#" class="button disabled">Disabled</a>
+<a href="#" class="button" disabled>Disabled (Attribute)</a>
+{% endhighlight %}
+
+<hr>
+
+### Use the Mixin
+
+Feel free to leverage the button mixin to meet your needs.
+
+{% include def-mixin-button.html %}
+
+Here's an example.
+
+##### Output
+
+<a href="#" class="button test-button">Test</a>
+<a href="#" class="button test-button2">Test2</a>
+
+##### SCSS
+
+{% highlight scss %}
+.test-button {
+    @include button(#5AD);
+}
+.test-button2 {
+    @include button(#CABB1E, $reverse: true);
+}
+{% endhighlight %}

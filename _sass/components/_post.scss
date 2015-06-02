@@ -1,0 +1,19 @@
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    p a.button {
+        margin-bottom: 0;
+    }
+}
+
+.post-meta {
+    font-size: modular-scale(1) * 1.25;
+    color: $gray;
+}

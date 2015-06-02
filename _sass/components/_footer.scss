@@ -1,0 +1,18 @@
+/**
+ * Site footer
+ */
+.site-footer {
+    border-top: 1px solid $gray-tint;
+    padding: $spacing-unit 0;
+
+    .footer-info {
+        color: $gray;
+        font-size: modular-scale(1) * 1.25;
+        text-align: center;
+    }
+}
+
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}

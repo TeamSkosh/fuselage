@@ -1,0 +1,52 @@
+/**
+ * Documentation Examples
+ */
+
+ // Buttons
+.test-button {
+    @include button(#5AD);
+}
+
+.test-button2 {
+    @include button(#CABB1E, $reverse: true);
+}
+
+// Debug
+.test-debug * {
+    outline: 1px solid $debug-color-1 !important;
+    * {
+        outline: 1px solid $debug-color-2 !important;
+        * {
+            outline: 1px solid $debug-color-3 !important;
+            * {
+                outline: 1px solid $debug-color-4 !important;
+                * {
+                    outline: 1px solid $debug-color-5 !important;
+                    * {
+                        outline: 1px solid $debug-color-6 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Forms
+.test-form {
+    margin-bottom: $spacing-unit;
+}
+
+// Widths
+.test-widths {
+    .row {
+        .column p {
+            background: $brand-primary;
+            color: $white;
+            padding: $spacing-unit / 4;
+        }
+
+        .row .column p {
+            background: $brand-secondary;
+        }
+    }
+}

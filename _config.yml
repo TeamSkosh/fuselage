@@ -1,13 +1,13 @@
 # Site settings
-title: Fuselage
+title: Fuselage | Skosh Interactive
 email: info@skosh.io
 description: > # this means to ignore newlines until "baseurl:"
   Fuselage is a sass-based, mobile-first front-end framework aimed at developer
   productivity and structural composability. With a sensible grid, refreshing
-  typographic defaults, and nifty features, it's a great starting point for
-  almost any project.
+  typographiy, and nifty features, it's a great starting point for almost any
+  project.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://teamskosh.github.com/" # the base hostname & protocol for your site
+url: "http://teamskosh.github.io/" # the base hostname & protocol for your site
 twitter_username: teamskosh
 github_username:  teamskosh
 
