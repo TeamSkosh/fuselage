@@ -41,6 +41,19 @@ module.exports = function(grunt) {
                         filter: "isFile"
                     }
                 ]
+            },
+            styles: {
+                files: [
+                    {
+                        expand: true,
+                        src: [
+                            "_site/css/main.min.css"
+                        ],
+                        dest: "css/",
+                        flatten: true,
+                        filter: "isFile"
+                    }
+                ]
             }
         },
 
@@ -63,6 +76,9 @@ module.exports = function(grunt) {
             },
             jekyllBuild: {
                 command: "jekyll build --config _config-dev.yml"
+            },
+            jekyllDeploy: {
+                command: "jekyll build --config _config.yml"
             }
         },
 
@@ -85,6 +101,14 @@ module.exports = function(grunt) {
         'newer:copy:fuselage',
         'shell:jekyllBuild',
         'sass'
+    ]);
+
+    grunt.registerTask('deploy', [
+        'newer:copy:jquery',
+        'newer:copy:fuselage',
+        'shell:jekyllDeploy',
+        'sass',
+        'newer:copy:styles'
     ]);
 
     grunt.registerTask('default', ['build']);
