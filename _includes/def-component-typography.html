@@ -15,7 +15,7 @@
     </div><!-- /.column -->
 
     <div class="column one-whole medium-one-half">
-        <h3>HTML</h3>
+        <h5>HTML</h5>
 
         {% highlight html %}
         <h1>H1 <small>Sub</small></h1>
@@ -30,32 +30,162 @@
 
 <hr>
 
-<h3>Headings</h3>
+<h3>Headline</h3>
 
-<p>Headings are constructed by default using a modular scale. There are six heading sizes that are built in off the bat.</p>
+<p>
+    The <code>.headline</code> class creates a large headline.
+</p>
 
 <div class="row">
     <div class="column one-whole medium-one-half">
         <h5>Output</h5>
 
-        <h1>H1 <small>Sub</small></h1>
-        <h2>H2 <small>Sub</small></h2>
-        <h3>H3 <small>Sub</small></h3>
-        <h4>H4 <small>Sub</small></h4>
-        <h5>H5 <small>Sub</small></h5>
-        <h6>H6 <small>Sub</small></h6>
+        <p class="headline">Hello.</p>
     </div><!-- /.column -->
 
     <div class="column one-whole medium-one-half">
-        <h3>HTML</h3>
+        <h5>HTML</h5>
 
         {% highlight html %}
-        <h1>H1 <small>Sub</small></h1>
-<h2>H2 <small>Sub</small></h2>
-<h3>H3 <small>Sub</small></h3>
-<h4>H4 <small>Sub</small></h4>
-<h5>H5 <small>Sub</small></h5>
-<h6>H6 <small>Sub</small></h6>
+        <p class="headline">Hello.</p>
+        {% endhighlight %}
+    </div><!-- /.column -->
+</div><!-- /.row -->
+
+<hr>
+
+<h3>Deck and Byline</h3>
+
+<p>
+    The <code>.deck</code> and <code>.byline</code> classes help style articles.
+</p>
+
+<div class="row">
+    <div class="column one-whole medium-one-half">
+        <h5>Output</h5>
+
+        <p class="deck">
+            This is a deck, it introduces the article and adds extra awesomeness.
+        </p>
+        <p class="byline">By Some Person</p>
+    </div><!-- /.column -->
+
+    <div class="column one-whole medium-one-half">
+        <h5>HTML</h5>
+
+        {% highlight html %}
+        <p class="deck">
+    This is a deck, it introduces the
+    article and adds extra awesomeness.
+</p>
+<p class="byline">By Some Person</p>
+        {% endhighlight %}
+    </div><!-- /.column -->
+</div><!-- /.row -->
+
+<hr>
+
+<h3>Lists</h3>
+
+<p>
+    These are the default styles for ordered, unordered, and definition lists.
+</p>
+
+<div class="row">
+    <div class="column one-whole medium-one-half">
+        <h5>Output</h5>
+
+        <ol>
+            <li>Do this first.</li>
+            <li>Then this.
+                <ol><li>Be mindful of this though!</li></ol>
+            </li>
+            <li>Lastly, do this.</li>
+        </ol>
+
+        <ul>
+            <li>Apples
+                <ol><li>Honeycrisp</li></ol>
+            </li>
+            <li>Avocados</li>
+            <li>Cheese</li>
+        </ul>
+
+        <dl>
+            <dt>Splendiferous</dt>
+            <dd>Extraordinarily or showily impressive.</dd>
+            <dd>That was a splendiferous Sunday dinner.</dd>
+        </dl>
+    </div><!-- /.column -->
+
+    <div class="column one-whole medium-one-half">
+        <h5>HTML</h5>
+
+        {% highlight html %}
+        <ol>
+    <li>Do this first.</li>
+    <li>Then this.
+        <ol><li>Be mindful of this though!</li></ol>
+    </li>
+    <li>Lastly, do this.</li>
+</ol>
+
+<ul>
+    <li>Apples
+        <ol><li>Honeycrisp</li></ol>
+    </li>
+    <li>Avocados</li>
+    <li>Cheese</li>
+</ul>
+
+<dl>
+    <dt>Splendiferous</dt>
+    <dd>Extraordinarily or showily impressive.</dd>
+    <dd>That was a splendiferous Sunday dinner.</dd>
+</dl>
+        {% endhighlight %}
+    </div><!-- /.column -->
+</div><!-- /.row -->
+
+<hr>
+
+<h3>Blockquotes and Code</h3>
+
+<p>
+    <code>blockquote</code>s and <code>code</code> blocks are made easy in Fuselage.
+</p>
+
+<div class="row">
+    <div class="column one-whole medium-one-half">
+        <h5>Output</h5>
+
+        <blockquote>
+            <p>When your arm gets hit, the ball is
+            not going to go where you want it to.</p>
+
+            <cite>John Madden</cite>
+        </blockquote>
+
+        {% highlight bash %}
+        # clone the repository
+git clone https://github.com/TeamSkosh/fuselage.git
+        {% endhighlight %}
+    </div><!-- /.column -->
+
+    <div class="column one-whole medium-one-half">
+        <h5>HTML</h5>
+
+        {% highlight html %}
+        <blockquote>
+    <p>When your arm gets hit, the ball is
+    not going to go where you want it to.</p>
+
+    <cite>John Madden</cite>
+</blockquote>
+
+<pre><code># clone the repository
+git clone https://github.com/TeamSkosh/fuselage.git
+</code></pre>
         {% endhighlight %}
     </div><!-- /.column -->
 </div><!-- /.row -->
