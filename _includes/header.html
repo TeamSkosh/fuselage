@@ -29,7 +29,7 @@
                     {% assign url_parts = node.url | split: "/" %}
                     {% if url_parts.last == "index.html" %}
                     <li>
-                        <a class="button small" href='{{ url_parts[1] | prepend: site.baseurl }}'>
+                        <a class="button small" href='{{ site.baseurl | append: "/" | append: url_parts[1] }}'>
                             {{ node.title }}
                         </a>
                     </li>

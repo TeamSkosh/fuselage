@@ -10,7 +10,7 @@ to use there are too heavy, too opinionated, and overwhelming to customize.
 This fits my needs, and if no one ever uses it but me, I'd be just fine with
 that.</p>
 
-<a href="{{ '/docs' | prepend: base_url }}" class="button">Read the Docs</a>
+<a href="{{ '/docs' | prepend: site.baseurl }}" class="button">Read the Docs</a>
 <a href="https://github.com/teamskosh/fuselage/issues" class="button info">Report Bugs</a>
 
 <hr>
@@ -20,20 +20,16 @@ that.</p>
 <p>Fuselage has no javascript dependencies, compiles on
 <a target="_blank" href="http://libsass.org/">Libsass</a>, and handles some
 historically problematic elements well. It has
-<a href="{{ '/docs/tables' | prepend: base_url }}">responsive tables</a> baked
-in, a <a href="{{ '/docs/widths' | prepend: base_url }}">simple and powerful
+<a href="{{ '/docs/tables' | prepend: site.baseurl }}">responsive tables</a> baked
+in, a <a href="{{ '/docs/widths' | prepend: site.baseurl }}">simple and powerful
 grid system</a>, and typography based on
 <a target="_blank" href="http://www.modularscale.com/">Modular Scale</a>.</p>
 
-<p>It handles <a href="{{ '/docs/forms' | prepend: base_url }}">responsive
+<p>It handles <a href="{{ '/docs/forms' | prepend: site.baseurl }}">responsive
 forms</a> well, provides some
-<a href="{{ '/docs/helpers' | prepend: base_url }}">thoughtful helpers</a>, and
+<a href="{{ '/docs/helpers' | prepend: site.baseurl }}">thoughtful helpers</a>, and
 looks pretty darn good too. All with the goal to get you up and running quickly.
 Quit rebuilding things over and over, and build websites faster and more
 consistently.</p>
-
-<h3>Why should I care?</h3>
-
-<p>I'm not saying you should. Thanks for visiting!</p>
 
 {% include features.html %}
