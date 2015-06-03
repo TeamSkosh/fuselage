@@ -57,10 +57,10 @@
     .#{$namespace}one-sixth {@include width-calc(1,6);}
     .#{$namespace}five-sixths {@include width-calc(5,6);}
 
-    .#{$namespace}one-eigth {@include width-calc(1,8);}
-    .#{$namespace}three-eigths {@include width-calc(3,8);}
-    .#{$namespace}five-eigths {@include width-calc(5,8);}
-    .#{$namespace}seven-eigths {@include width-calc(7,8);}
+    .#{$namespace}one-eighth {@include width-calc(1,8);}
+    .#{$namespace}three-eighths {@include width-calc(3,8);}
+    .#{$namespace}five-eighths {@include width-calc(5,8);}
+    .#{$namespace}seven-eighths {@include width-calc(7,8);}
 
     .#{$namespace}one-tenth {@include width-calc(1,10);}
     .#{$namespace}three-tenths {@include width-calc(3,10);}
