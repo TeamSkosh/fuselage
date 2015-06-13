@@ -82,8 +82,20 @@
 
     @for $i from 1 through length($headings) {
         h#{nth($headings, $i)}, .h#{nth($headings, $i)} {
-            font-size: nth($scale-list, $i);
+            font-size: nth($scale-list, $i) * 0.5;
             line-height: 1;
+
+            @include mq($small) {
+                font-size: nth($scale-list, $i) * 0.6;
+            }
+
+            @include mq($medium) {
+                font-size: nth($scale-list, $i) * 0.7;
+            }
+
+            @include mq($large) {
+                font-size: nth($scale-list, $i) * 0.9;
+            }
 
             @media print {
                 font-size: nth($scale-list, $i) * 0.6;
