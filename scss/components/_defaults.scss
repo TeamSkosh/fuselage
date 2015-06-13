@@ -6,6 +6,7 @@
 
 // Features
 $gimme-debug: false !default;
+$gimme-responsive-tables: true !default;
 $gimme-responsive-widths: true !default;
 
 // Breakpoints (lower bounds, mobile first)
@@ -14,6 +15,7 @@ $small: 320px !default;
 $medium: 640px !default;
 $large: 960px !default;
 $xlarge: 1280px !default;
+$xxlarge: 1500px !default;
 
 // Brand Colors
 $brand-primary: #FF6633 !default;
