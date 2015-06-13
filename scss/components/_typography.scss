@@ -27,6 +27,12 @@ ul, ol, dl, figure, address,
     margin-bottom: $spacing-unit;
 }
 
+dl, ol, ul {
+  dl, ol, ul {
+    margin-bottom: 0;
+  }
+}
+
 small {
   color: lighten($gray, 15%);
   font-size: 70%;
