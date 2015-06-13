@@ -7,17 +7,17 @@ permalink: /docs/tables
 categories: docs component
 ---
 
-Fuselage elegantly handles tables across all device size, and this is how to use them.
+Fuselage elegantly handles tables across all device size, and here is how to do it.
 
 <hr>
 
 ### Building Responsive Tables
 
-Tables are responsive by default in fuselage, and display in its responsive state in `xsmall` and `small` media sizes. It is important to include `data-th` attribute in order to have each field labelled correctly in the responsive view.
+Javascript-free responsive tables are built into Fuselage, and are easy to use. Simply add `small-responsive`, `medium-responsive`, `large-responsive`, `xlarge-responsive`, or `responsive` classes to your tables. Your table will be in the responsive view until you hit the media size specified (mobile first). Use the `responsive` class to only use the responsive view across all media sizes (there is no `xxlarge-responsive` class). It is important to include `data-th` attribute in order to have each field labelled correctly in the responsive view.
 
 ##### Output
 
-<table>
+<table class="medium-responsive">
     <caption>This is a caption for the table</caption>
     <thead>
         <tr>
@@ -84,7 +84,7 @@ Tables are responsive by default in fuselage, and display in its responsive stat
 
 ##### HTML
 {% highlight html %}
-<table>
+<table class="medium-responsive">
     <caption>This is a caption for the table</caption>
     <thead>
         <tr>

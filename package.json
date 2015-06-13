@@ -1,6 +1,6 @@
 {
   "name": "fuselage-docs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "devDependencies": {
     "bower": "^1.4.1",
     "grunt": "^0.4.5",

@@ -1,0 +1,31 @@
+<p id="def-mixin-button">
+    <code class="def-title">responsive-table-setup([$namespace])</code><br>
+
+    <span class="secondary-text">➜</span> Creates namespaced classes for responsive tables. Couple with <code>mq()</code> to create new responsive table breakpoints classes to go with them!
+</p>
+
+<blockquote>
+    <dl>
+        <dt>$namespace <small><em>string</em> (Null)</small></dt>
+        <dd><a href="{{ '/docs/variables' | prepend: base_url }}">Media namespace</a> (<code>"small"</code>, <code>"medium"</code>, <code>"large"</code>, <code>"xlarge"</code>) or any custom namespace.</dd>
+        <dd><strong>NOTE:</strong> Passing nothing to this mixin will duplicate classes that already exist in Fuselage.</dd>
+        <dd><strong>NOTE:</strong> Be sure to use UPPER BOUNDS, this is different than using <code>width-setup()</code>.</dd>
+    </dl>
+</blockquote>
+
+<h5>Example SCSS</h5>
+
+{% highlight scss %}
+// Blackberry responsive tables. Super duper important.
+@include mq(384px) {@include responsive-table-setup($namespace: "blackberry");}
+
+// Creates class to be used with responsive tables for this media size (blackberry-responsive).
+{% endhighlight %}
+
+<h5>Example HTML</h5>
+
+{% highlight html %}
+<table class="blackberry-responsive">
+    ...
+</table>
+{% endhighlight %}
