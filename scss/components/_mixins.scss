@@ -57,10 +57,10 @@
     .#{$namespace}one-sixth {@include width-calc(1,6);}
     .#{$namespace}five-sixths {@include width-calc(5,6);}
 
-    .#{$namespace}one-eigth {@include width-calc(1,8);}
-    .#{$namespace}three-eigths {@include width-calc(3,8);}
-    .#{$namespace}five-eigths {@include width-calc(5,8);}
-    .#{$namespace}seven-eigths {@include width-calc(7,8);}
+    .#{$namespace}one-eighth {@include width-calc(1,8);}
+    .#{$namespace}three-eighths {@include width-calc(3,8);}
+    .#{$namespace}five-eighths {@include width-calc(5,8);}
+    .#{$namespace}seven-eighths {@include width-calc(7,8);}
 
     .#{$namespace}one-tenth {@include width-calc(1,10);}
     .#{$namespace}three-tenths {@include width-calc(3,10);}
@@ -73,6 +73,34 @@
     .#{$namespace}one-twelfths {@include width-calc(11,12);}
 }
 
+// Responsive Table Setup
+@mixin responsive-table-setup($namespace: "") {
+    @if $namespace != "" {$namespace: $namespace + "-";}
+
+    table.#{$namespace}responsive {
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+
+        td {
+            display: table-cell;
+            font-size: inherit;
+
+            &:before {
+                display: none;
+            }
+
+            &:nth-child(n+2) {
+                padding-top: ($spacing-unit / 2.5);
+            }
+        }
+    }
+}
+
 // Modular Scale
 @mixin modular-headings($scale-list: $generated-scale, $num-headings: 5) {
     $headings: ();
@@ -82,8 +110,20 @@
 
     @for $i from 1 through length($headings) {
         h#{nth($headings, $i)}, .h#{nth($headings, $i)} {
-            font-size: nth($scale-list, $i);
+            font-size: nth($scale-list, $i) * 0.5;
             line-height: 1;
+
+            @include mq($small) {
+                font-size: nth($scale-list, $i) * 0.6;
+            }
+
+            @include mq($medium) {
+                font-size: nth($scale-list, $i) * 0.7;
+            }
+
+            @include mq($large) {
+                font-size: nth($scale-list, $i) * 0.9;
+            }
 
             @media print {
                 font-size: nth($scale-list, $i) * 0.6;

@@ -37,4 +37,7 @@
 
     // Xlarge widths - 1280px
     @include mq($xlarge) {@include width-setup($namespace: "xlarge");}
+
+    // Xxlarge widths - 1500px
+    @include mq($xxlarge) {@include width-setup($namespace: "xxlarge");}
 }

@@ -21,19 +21,6 @@ table {
     thead,
     tfoot {
         background: $gray-tint;
-        display: none;
-    }
-
-    thead {
-        @include mq($medium, $media: "print") {
-            display: table-header-group;
-        }
-    }
-
-    tfoot {
-        @include mq($medium, $media: "print") {
-            display: table-footer-group;
-        }
     }
 
     tr:nth-of-type(even) {
@@ -41,31 +28,11 @@ table {
     }
 
     td {
-        display: block;
-        font-size: modular-scale(2) * 1.125;
         padding: $spacing-unit / 2.5;
         text-align: left;
 
         &:nth-child(n+2) {
-            padding-top: 0;
-        }
-
-        &:before {
-            content: attr(data-th)":\A";
-            font-size: modular-scale(1) * 1.25;
-            font-weight: 400;
-            white-space: pre;
-
-            @include mq($medium, $media: "print") { display: none; }
-        }
-
-        @include mq($medium, $media: "print") {
-            display: table-cell;
-            font-size: inherit;
-
-            &:nth-child(n+2) {
-                padding-top: ($spacing-unit / 2.5);
-            }
+            padding-top: ($spacing-unit / 2.5);
         }
     }
 
@@ -80,4 +47,50 @@ table {
             font-weight: bold;
         }
     }
+}
+
+table[class*="responsive"] {
+
+    thead,
+    tfoot {
+        background: $gray-tint;
+        display: none;
+    }
+
+    td {
+        display: block;
+        padding: $spacing-unit / 2.5;
+        text-align: left;
+
+        &:nth-child(n+2) {
+            padding-top: 0;
+        }
+
+        &:before {
+            content: attr(data-th)":\A";
+            font-size: modular-scale(1) * 1.25;
+            font-weight: 400;
+            white-space: pre;
+        }
+    }
+}
+
+@if $gimme-responsive-tables == true {
+    // Tables switch to responsive view in Xsmall media query - 0
+    @include mq($small - 1) {@include responsive-table-setup($namespace: "xsmall");}
+
+    // Tables switch to responsive view in Small media query - 320px
+    @include mq($medium - 1) {@include responsive-table-setup($namespace: "small");}
+
+    // Tables switch to responsive view in Medium - 640px
+    @include mq($large - 1) {@include responsive-table-setup($namespace: "medium");}
+
+    // Tables switch to responsive view in Large - 960px
+    @include mq($xlarge - 1) {@include responsive-table-setup($namespace: "large");}
+
+    // Tables switch to responsive view in Xlarge - 1280px
+    @include mq($xxlarge - 1) {@include responsive-table-setup($namespace: "xlarge");}
+
+    // Tables switch to responsive view in Xxlarge - 1500px
+    // Simply use the class 'responsive' on your table to always use the responsive view
 }
