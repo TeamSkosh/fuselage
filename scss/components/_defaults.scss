@@ -32,6 +32,7 @@ $brand-tertiary-shade: darken($brand-tertiary, 20%);
 
 // Default Colors
 $gray: #5D5D5D !default;
+$gray-tint-text: lighten($gray, 35%);
 $gray-tint: lighten($gray, 55%);
 $gray-shade: darken($gray, 30%);
 
