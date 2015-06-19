@@ -10,3 +10,10 @@ Install via [bower](http://bower.io/)
 $ bower install fuselage
 ```
 
+
+## Browser Compatibility
+
+- IE 9+
+- Chrome
+- Firefox
+- Safari
