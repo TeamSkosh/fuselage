@@ -29,6 +29,10 @@
 
 // Border radius
 .rounded {
+    border-radius: 1000px;
+}
+
+.radius {
     border-radius: $border-radius;
 }
 
@@ -36,6 +40,9 @@
 .primary {
     background: $brand-primary;
     color: $white;
+}
+hr.primary {
+    border-color: $brand-primary;
 }
 .primary-text {
     color: $brand-primary;
@@ -45,6 +52,9 @@
     background: $brand-secondary;
     color: $white;
 }
+hr.secondary {
+    border-color: $brand-secondary;
+}
 .secondary-text {
     color: $brand-secondary;
 }
@@ -52,6 +62,9 @@
 .tertiary {
     background: $brand-tertiary;
     color: $white;
+}
+hr.tertiary {
+    border-color: $brand-tertiary;
 }
 .tertiary-text {
     color: $brand-tertiary;
@@ -61,6 +74,9 @@
     background: $debug-color-1;
     color: $white;
 }
+hr.info {
+    border-color: $debug-color-1;
+}
 .info-text {
     color: $debug-color-1;
 }
@@ -68,6 +84,9 @@
 .success {
     background: $debug-color-2;
     color: $white;
+}
+hr.success {
+    border-color: $debug-color-2;
 }
 .success-text {
     color: $debug-color-2;
@@ -77,6 +96,9 @@
     background: $debug-color-5;
     color: $white;
 }
+hr.warn {
+    border-color: $debug-color-5;
+}
 .warn-text {
     color: $debug-color-5;
 }
@@ -85,6 +107,19 @@
     background: $debug-color-4;
     color: $white;
 }
+hr.alert {
+    border-color: $debug-color-4;
+}
 .alert-text {
     color: $debug-color-4;
+}
+
+.gray {
+    background: $gray-tint;
+}
+hr.gray {
+    border-color: $gray-tint-text;
+}
+.gray-text {
+    color: $gray-tint-text;
 }
