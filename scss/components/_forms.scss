@@ -28,12 +28,14 @@ label {
 
 input,
 textarea {
-    display: inline-block;
     border: 1px solid lighten($gray, 20%);
+    display: inline-block;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
+    border: 0;
+    cursor: pointer;
     margin-bottom: $spacing-unit / 2;
 
     &+ label {
@@ -45,11 +47,25 @@ input[type="radio"] {
     }
 }
 
+input[type="range"] {
+    border: 0;
+}
+
 input[type="file"] {
     cursor: pointer;
     text-align: start;
 
+    &::file-upload-button {
+        visibility: hidden;
+        width: 0;
+    }
+
     &::-webkit-file-upload-button {
+        visibility: hidden;
+        width: 0;
+    }
+
+    &::-moz-file-upload-button {
         visibility: hidden;
         width: 0;
     }
