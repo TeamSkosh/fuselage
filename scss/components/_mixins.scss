@@ -140,14 +140,6 @@
       border-bottom: 1px solid $color;
     }
 
-    &:visited {
-      color: darken($color, 22%);
-
-      &:hover {
-        border-bottom: 1px solid darken($color, 22%);
-      }
-    }
-
     &.disabled,
     &[disabled] {
         color: lighten($gray, 12%);
