@@ -1,5 +1,12 @@
 # Fuselage
 
+## v1.0.0 General Availability
+- [x] Outline browser compatibilities. Fix #42. Close #46.
+- [x] Add drop cap styles. Fix #43. Close #46.
+- [x] Remove default visited styles from links. Fix #20. Fix #44. Close #48.
+- [x] Address form display bugs. Fix #45. Close #49.
+- [x] Create additional helper classes. Fix #50. Close #51.
+
 ## v0.4.0 Beta
 - [x] Overhaul responsive tables to make them optional and configurable. Fix #27. Fix #28.
 - [x] Add a license. Fix #32.
