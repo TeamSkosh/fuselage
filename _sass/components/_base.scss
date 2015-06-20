@@ -38,7 +38,6 @@ hr {
  * Icons
  */
 .icon {
-
     &:hover {
         border-bottom: none;
     }
@@ -52,6 +51,45 @@ hr {
         path {
             fill: $gray;
         }
+    }
+}
+
+.browser-icons {
+    padding-left: 0;
+
+    li {
+        background-image: url("../img/browsers-desktop.png");
+        background-repeat: no-repeat;
+        background-size: auto 50px;
+        display: inline-block;
+        height: 50px;
+        list-style: none;
+        width: 50px;
+
+        h5 {
+            margin-top: 50px;
+            text-align: center;
+        }
+    }
+
+    .chrome {
+        background-position: 0;
+    }
+
+    .firefox {
+        background-position: -50px;
+    }
+
+    .ie {
+        background-position: -100px;
+    }
+
+    .opera {
+        background-position: -150px;
+    }
+
+    .safari {
+        background-position: -200px;
     }
 }
 

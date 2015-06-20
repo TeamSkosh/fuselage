@@ -1,6 +1,6 @@
 <h3>Headings</h3>
 
-<p>Headings are constructed by default using a modular scale. There are six heading sizes that are built in off the bat.</p>
+<p>Headings are constructed by default using a modular scale. There are five heading sizes that are built in off the bat.</p>
 
 <div class="row">
     <div class="column one-whole medium-one-half">
@@ -77,6 +77,42 @@
     article and adds extra awesomeness.
 </p>
 <p class="byline">By Some Person</p>
+        {% endhighlight %}
+    </div><!-- /.column -->
+</div><!-- /.row -->
+
+<hr>
+
+<h3>Drop Cap</h3>
+
+<p>
+    The <code>.drop-cap</code> class makes it easy to implement drop caps. Add a
+    <code>span</code> around the first phrase, and give it the
+    <code>.initial-phrase</code> class in order to style it in small caps.
+</p>
+
+<div class="row">
+    <div class="column one-whole medium-one-half">
+        <h5>Output</h5>
+
+        <p class="drop-cap">
+            <span class="initial-phrase">Dorem ipsum dolor sit amet,</span> consectetur adipisicing elit.
+            Repudiandae fugit labore ipsum iste obcaecati delectus reiciendis
+            vel dolorem, aliquam ab perspiciatis quaerat, magni qui est
+            blanditiis? Non, pariatur quaerat omnis!
+        </p>
+    </div><!-- /.column -->
+
+    <div class="column one-whole medium-one-half">
+        <h5>HTML</h5>
+
+        {% highlight html %}
+        <p class="drop-cap">
+    <span class="initial-phrase">Dorem ipsum dolor sit amet,</span> consectetur adipisicing elit.
+    Repudiandae fugit labore ipsum iste obcaecati delectus reiciendis
+    vel dolorem, aliquam ab perspiciatis quaerat, magni qui est
+    blanditiis? Non, pariatur quaerat omnis!
+</p>
         {% endhighlight %}
     </div><!-- /.column -->
 </div><!-- /.row -->

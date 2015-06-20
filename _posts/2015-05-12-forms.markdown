@@ -28,8 +28,8 @@ Combine HTML5 form elements with [widths (grid)]({{ "/docs/widths" | prepend: ba
             </div>
 
             <div class="column one-whole medium-one-third">
-                 <label for="email">Email
-                     <input type="email" name="email" id="email" tabindex="2" placeholder=".column.medium-one-half">
+                 <label for="email">Email <small>Required</small>
+                     <input type="email" name="email" id="email" tabindex="2" placeholder=".column.medium-one-half" required>
                  </label>
             </div>
 
@@ -52,8 +52,8 @@ Combine HTML5 form elements with [widths (grid)]({{ "/docs/widths" | prepend: ba
             </div>
 
             <div class="column one-whole medium-one-fourth">
-                <label for="file">Upload something!
-                    <input type="file" name="file" id="file" tabindex="5">
+                <label for="age">Age
+                    <input type="number" name="age" id="age" tabindex="5">
                 </label>
             </div>
 
@@ -79,8 +79,8 @@ Combine HTML5 form elements with [widths (grid)]({{ "/docs/widths" | prepend: ba
             </div>
 
             <div class="column one-whole medium-one-fourth">
-                <label>Agreement</label>
-                <input type="checkbox" name="checkbox" id="checkbox" tabindex="9">
+                <label>Agreement <small>Required</small></label>
+                <input type="checkbox" name="checkbox" id="checkbox" tabindex="9" required>
                 <label for="checkbox">I accept
                 </label>
             </div>
@@ -113,8 +113,8 @@ Combine HTML5 form elements with [widths (grid)]({{ "/docs/widths" | prepend: ba
             </div>
 
             <div class="column one-whole medium-one-third">
-                 <label>Email
-                     <input type="email">
+                 <label>Email <small>Required</small>
+                     <input type="email" required>
                  </label>
             </div>
 
@@ -137,8 +137,8 @@ Combine HTML5 form elements with [widths (grid)]({{ "/docs/widths" | prepend: ba
             </div>
 
             <div class="column one-whole medium-one-fourth">
-                <label>Upload something!
-                    <input type="file">
+                <label>Age
+                    <input type="number">
                 </label>
             </div>
 
@@ -164,8 +164,8 @@ Combine HTML5 form elements with [widths (grid)]({{ "/docs/widths" | prepend: ba
             </div>
 
             <div class="column one-whole medium-one-fourth">
-                <label>Agreement</label>
-                <input type="checkbox">
+                <label>Agreement <small>Required</small></label>
+                <input type="checkbox" required>
                 <label for="checkbox">I accept</label>
             </div>
         </div>

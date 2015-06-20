@@ -40,30 +40,28 @@
 <h5>HTML</h5>
 
 {% highlight html %}
-<div class="test-widths">
-    <div class="row">
-        <div class="column one-whole medium-one-half large-one-third">
-            <p>a</p>
-        </div><!-- /.column -->
-        <div class="column one-whole medium-one-half large-one-third">
-            <p>b</p>
-        </div><!-- /.column -->
-        <div class="column one-whole large-one-third">
-            <p>c</p>
-        </div><!-- /.column -->
-    </div><!-- /.row -->
-    <div class="row">
-        <div class="column one-whole medium-three-fourths large-one-sixth">
-            <p>x</p>
-        </div><!-- /.column -->
-        <div class="column one-half medium-one-eighth large-one-half">
-            <p>y</p>
-        </div><!-- /.column -->
-        <div class="column one-half medium-one-eighth large-one-third">
-            <p>z</p>
-        </div><!-- /.column -->
-    </div><!-- /.row -->
-</div>
+<div class="row">
+    <div class="column one-whole medium-one-half large-one-third">
+        <p>a</p>
+    </div><!-- /.column -->
+    <div class="column one-whole medium-one-half large-one-third">
+        <p>b</p>
+    </div><!-- /.column -->
+    <div class="column one-whole large-one-third">
+        <p>c</p>
+    </div><!-- /.column -->
+</div><!-- /.row -->
+<div class="row">
+    <div class="column one-whole medium-three-fourths large-one-sixth">
+        <p>x</p>
+    </div><!-- /.column -->
+    <div class="column one-half medium-one-eighth large-one-half">
+        <p>y</p>
+    </div><!-- /.column -->
+    <div class="column one-half medium-one-eighth large-one-third">
+        <p>z</p>
+    </div><!-- /.column -->
+</div><!-- /.row -->
 {% endhighlight %}
 
 <h3>Nesting Widths</h3>
@@ -111,30 +109,28 @@ collective sakes, please exercise judgment!</p>
 <h5>HTML</h5>
 
 {% highlight html %}
-<div class="test-widths">
-    <div class="row">
-        <div class="column one-whole medium-one-half large-two-thirds">
-            <p>a</p>
-            <div class="row">
-                <div class="column one-whole large-one-third">
-                    <p>a.a</p>
-                </div><!-- /.row -->
-                <div class="column one-whole large-two-thirds">
-                    <p>a.b</p>
-                </div><!-- /.row -->
+<div class="row">
+    <div class="column one-whole medium-one-half large-two-thirds">
+        <p>a</p>
+        <div class="row">
+            <div class="column one-whole large-one-third">
+                <p>a.a</p>
             </div><!-- /.row -->
-        </div><!-- /.column -->
-        <div class="column one-whole medium-one-half large-one-third">
-            <p>b</p>
-            <div class="row">
-                <div class="column one-half large-one-third">
-                    <p>b.a</p>
-                </div><!-- /.row -->
-                <div class="column one-half large-two-thirds">
-                    <p>b.b</p>
-                </div><!-- /.row -->
+            <div class="column one-whole large-two-thirds">
+                <p>a.b</p>
             </div><!-- /.row -->
-        </div><!-- /.column -->
-    </div><!-- /.row -->
-</div>
+        </div><!-- /.row -->
+    </div><!-- /.column -->
+    <div class="column one-whole medium-one-half large-one-third">
+        <p>b</p>
+        <div class="row">
+            <div class="column one-half large-one-third">
+                <p>b.a</p>
+            </div><!-- /.row -->
+            <div class="column one-half large-two-thirds">
+                <p>b.b</p>
+            </div><!-- /.row -->
+        </div><!-- /.row -->
+    </div><!-- /.column -->
+</div><!-- /.row -->
 {% endhighlight %}
