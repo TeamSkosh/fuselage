@@ -189,7 +189,7 @@ pre {
 h1, h2, h3, h4, h5, h6, hr,
 p, blockquote, pre, table,
 ul, ol, dl, figure, address {
-  a {
+  a:not(.button) {
     @include text-link($brand-primary);
   }
 }
