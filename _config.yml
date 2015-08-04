@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   productivity and structural composability. With a sensible grid, refreshing
   typographiy, and nifty features, it's a great starting point for almost any
   project.
-baseurl: "/fuselage" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://teamskosh.github.io/" # the base hostname & protocol for your site
 twitter_username: teamskosh
 github_username:  teamskosh
