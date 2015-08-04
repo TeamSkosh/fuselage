@@ -158,6 +158,7 @@
     line-height: 1;
     margin-bottom: $spacing-unit;
     padding: $spacing-unit / 1.5;
+    text-align: center;
 
     @if $reverse == true {
         background: $color;
