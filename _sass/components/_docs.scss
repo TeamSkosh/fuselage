@@ -11,6 +11,10 @@
     @include button(#CABB1E, $reverse: true);
 }
 
+.test-extended {
+    margin-top: $spacing-unit / 2;
+}
+
 // Debug
 .test-debug * {
     outline: 1px solid $debug-color-1 !important;

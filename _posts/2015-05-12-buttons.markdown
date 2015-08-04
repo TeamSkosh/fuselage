@@ -55,7 +55,7 @@ Utilize the [branding variables]({{ "/docs/variables" | prepend: base_url }}) to
 
 ### Button Sizes
 
-Tack on a class `tiny`, `small`, or `large` to adjust the size of your buttons.
+Tack on a class `tiny`, `small`, or `large` to adjust the size of your buttons. Buttons with the `extended` class will stretch to the full width of their container.
 
 ##### Output
 
@@ -63,6 +63,7 @@ Tack on a class `tiny`, `small`, or `large` to adjust the size of your buttons.
 <a href="#" class="button small">Small</a>
 <a href="#" class="button">Default</a>
 <a href="#" class="button large">Large</a>
+<a href="#" class="button extended test-extended">Extended</a>
 
 ##### HTML
 
@@ -71,6 +72,7 @@ Tack on a class `tiny`, `small`, or `large` to adjust the size of your buttons.
 <a href="#" class="button small">Small</a>
 <a href="#" class="button">Default</a>
 <a href="#" class="button large">Large</a>
+<a href="#" class="button extended">Extended</a>
 {% endhighlight %}
 
 <hr>

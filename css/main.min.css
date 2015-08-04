@@ -1058,14 +1058,14 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, hr a, p a, blockquote a, pre a, table a, ul a, ol a, dl a, figure a, address a {
+h1 a:not(.button), h2 a:not(.button), h3 a:not(.button), h4 a:not(.button), h5 a:not(.button), h6 a:not(.button), hr a:not(.button), p a:not(.button), blockquote a:not(.button), pre a:not(.button), table a:not(.button), ul a:not(.button), ol a:not(.button), dl a:not(.button), figure a:not(.button), address a:not(.button) {
   color: #FF6633; }
-  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, hr a:hover, p a:hover, blockquote a:hover, pre a:hover, table a:hover, ul a:hover, ol a:hover, dl a:hover, figure a:hover, address a:hover {
+  h1 a:not(.button):hover, h2 a:not(.button):hover, h3 a:not(.button):hover, h4 a:not(.button):hover, h5 a:not(.button):hover, h6 a:not(.button):hover, hr a:not(.button):hover, p a:not(.button):hover, blockquote a:not(.button):hover, pre a:not(.button):hover, table a:not(.button):hover, ul a:not(.button):hover, ol a:not(.button):hover, dl a:not(.button):hover, figure a:not(.button):hover, address a:not(.button):hover {
     border-bottom: 1px solid #FF6633; }
-  h1 a.disabled, h1 a[disabled], h2 a.disabled, h2 a[disabled], h3 a.disabled, h3 a[disabled], h4 a.disabled, h4 a[disabled], h5 a.disabled, h5 a[disabled], h6 a.disabled, h6 a[disabled], hr a.disabled, hr a[disabled], p a.disabled, p a[disabled], blockquote a.disabled, blockquote a[disabled], pre a.disabled, pre a[disabled], table a.disabled, table a[disabled], ul a.disabled, ul a[disabled], ol a.disabled, ol a[disabled], dl a.disabled, dl a[disabled], figure a.disabled, figure a[disabled], address a.disabled, address a[disabled] {
+  h1 a:not(.button).disabled, h1 a:not(.button)[disabled], h2 a:not(.button).disabled, h2 a:not(.button)[disabled], h3 a:not(.button).disabled, h3 a:not(.button)[disabled], h4 a:not(.button).disabled, h4 a:not(.button)[disabled], h5 a:not(.button).disabled, h5 a:not(.button)[disabled], h6 a:not(.button).disabled, h6 a:not(.button)[disabled], hr a:not(.button).disabled, hr a:not(.button)[disabled], p a:not(.button).disabled, p a:not(.button)[disabled], blockquote a:not(.button).disabled, blockquote a:not(.button)[disabled], pre a:not(.button).disabled, pre a:not(.button)[disabled], table a:not(.button).disabled, table a:not(.button)[disabled], ul a:not(.button).disabled, ul a:not(.button)[disabled], ol a:not(.button).disabled, ol a:not(.button)[disabled], dl a:not(.button).disabled, dl a:not(.button)[disabled], figure a:not(.button).disabled, figure a:not(.button)[disabled], address a:not(.button).disabled, address a:not(.button)[disabled] {
     color: #7c7c7c;
     border-bottom: 1px solid; }
-    h1 a.disabled:hover, h1 a[disabled]:hover, h2 a.disabled:hover, h2 a[disabled]:hover, h3 a.disabled:hover, h3 a[disabled]:hover, h4 a.disabled:hover, h4 a[disabled]:hover, h5 a.disabled:hover, h5 a[disabled]:hover, h6 a.disabled:hover, h6 a[disabled]:hover, hr a.disabled:hover, hr a[disabled]:hover, p a.disabled:hover, p a[disabled]:hover, blockquote a.disabled:hover, blockquote a[disabled]:hover, pre a.disabled:hover, pre a[disabled]:hover, table a.disabled:hover, table a[disabled]:hover, ul a.disabled:hover, ul a[disabled]:hover, ol a.disabled:hover, ol a[disabled]:hover, dl a.disabled:hover, dl a[disabled]:hover, figure a.disabled:hover, figure a[disabled]:hover, address a.disabled:hover, address a[disabled]:hover {
+    h1 a:not(.button).disabled:hover, h1 a:not(.button)[disabled]:hover, h2 a:not(.button).disabled:hover, h2 a:not(.button)[disabled]:hover, h3 a:not(.button).disabled:hover, h3 a:not(.button)[disabled]:hover, h4 a:not(.button).disabled:hover, h4 a:not(.button)[disabled]:hover, h5 a:not(.button).disabled:hover, h5 a:not(.button)[disabled]:hover, h6 a:not(.button).disabled:hover, h6 a:not(.button)[disabled]:hover, hr a:not(.button).disabled:hover, hr a:not(.button)[disabled]:hover, p a:not(.button).disabled:hover, p a:not(.button)[disabled]:hover, blockquote a:not(.button).disabled:hover, blockquote a:not(.button)[disabled]:hover, pre a:not(.button).disabled:hover, pre a:not(.button)[disabled]:hover, table a:not(.button).disabled:hover, table a:not(.button)[disabled]:hover, ul a:not(.button).disabled:hover, ul a:not(.button)[disabled]:hover, ol a:not(.button).disabled:hover, ol a:not(.button)[disabled]:hover, dl a:not(.button).disabled:hover, dl a:not(.button)[disabled]:hover, figure a:not(.button).disabled:hover, figure a:not(.button)[disabled]:hover, address a:not(.button).disabled:hover, address a:not(.button)[disabled]:hover {
       border-bottom-color: #7c7c7c; }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1079,6 +1079,7 @@ button, .button {
   line-height: 1;
   margin-bottom: 2.6180340252rem;
   padding: 1.7453560168rem;
+  text-align: center;
   background: rgba(255, 255, 255, 0);
   border: 1px solid #FF6633;
   color: #FF6633; }
@@ -1091,12 +1092,15 @@ button, .button {
     button.disabled:hover, button[disabled]:hover, .button.disabled:hover, .button[disabled]:hover {
       background: rgba(255, 255, 255, 0);
       color: #ff9470; }
+  button.extended, .button.extended {
+    width: 100%; }
   button.secondary, .button.secondary {
     display: inline-block;
     font-weight: normal;
     line-height: 1;
     margin-bottom: 2.6180340252rem;
     padding: 1.7453560168rem;
+    text-align: center;
     background: rgba(255, 255, 255, 0);
     border: 1px solid #6DBBB7;
     color: #6DBBB7; }
@@ -1115,6 +1119,7 @@ button, .button {
     line-height: 1;
     margin-bottom: 2.6180340252rem;
     padding: 1.7453560168rem;
+    text-align: center;
     background: rgba(255, 255, 255, 0);
     border: 1px solid #B29167;
     color: #B29167; }
@@ -1133,6 +1138,7 @@ button, .button {
     line-height: 1;
     margin-bottom: 2.6180340252rem;
     padding: 1.7453560168rem;
+    text-align: center;
     background: rgba(255, 255, 255, 0);
     border: 1px solid #778899;
     color: #778899; }
@@ -1151,6 +1157,7 @@ button, .button {
     line-height: 1;
     margin-bottom: 2.6180340252rem;
     padding: 1.7453560168rem;
+    text-align: center;
     background: rgba(255, 255, 255, 0);
     border: 1px solid #3B8C0C;
     color: #3B8C0C; }
@@ -1169,6 +1176,7 @@ button, .button {
     line-height: 1;
     margin-bottom: 2.6180340252rem;
     padding: 1.7453560168rem;
+    text-align: center;
     background: rgba(255, 255, 255, 0);
     border: 1px solid #FFB83F;
     color: #FFB83F; }
@@ -1187,6 +1195,7 @@ button, .button {
     line-height: 1;
     margin-bottom: 2.6180340252rem;
     padding: 1.7453560168rem;
+    text-align: center;
     background: rgba(255, 255, 255, 0);
     border: 1px solid #CE4844;
     color: #CE4844; }
@@ -1691,6 +1700,7 @@ hr {
   line-height: 1;
   margin-bottom: 2.6180340252rem;
   padding: 1.7453560168rem;
+  text-align: center;
   background: rgba(255, 255, 255, 0);
   border: 1px solid #5AD;
   color: #5AD; }
@@ -1710,6 +1720,7 @@ hr {
   line-height: 1;
   margin-bottom: 2.6180340252rem;
   padding: 1.7453560168rem;
+  text-align: center;
   background: #CABB1E;
   border: 1px solid #CABB1E;
   color: #FFF; }
@@ -1723,6 +1734,9 @@ hr {
     .test-button2.disabled:hover, .test-button2[disabled]:hover {
       background: #e3d542;
       border-color: #e3d542; }
+
+.test-extended {
+  margin-top: 1.3090170126rem; }
 
 .test-debug * {
   outline: 1px solid #778899 !important; }
