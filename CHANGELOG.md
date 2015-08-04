@@ -1,5 +1,9 @@
 # Fuselage
 
+## v1.0.1
+- [x] Fix border-bottom bug for buttons inside of paragraph tags. Fix #56. Close #58.
+- [x] Add button helper class for creating full-width buttons. Fix #57. Close #59.
+
 ## v1.0.0 General Availability
 - [x] Outline browser compatibilities. Fix #42. Close #46.
 - [x] Add drop cap styles. Fix #43. Close #46.
