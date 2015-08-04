@@ -8,6 +8,10 @@ button,
 .button {
     @include button($brand-primary);
 
+    &.extended {
+        width: 100%;
+    }
+
     &.secondary {
         @include button($brand-secondary);
     }
