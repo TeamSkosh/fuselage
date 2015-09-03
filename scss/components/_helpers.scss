@@ -8,7 +8,32 @@
     @include clearfix;
 }
 
+// NOTE: The hidden class is inaccessible
 .hidden {display: none;}
+
+// Borrowed from H5BP and Jonathon Snook:
+// https://github.com/h5bp/html5-boilerplate/blob/697fa65431bcafae222f13f574e27b1f21f81286/dist/css/main.css#L133
+// http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
 .left {float: left;}
 .right {float: right;}
 
