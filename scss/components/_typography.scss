@@ -153,6 +153,7 @@ pre,
 code,
 kbd {
     font-family: $mono-font;
+    font-size: $code-font-size;
     border-radius: $border-radius / 2;
     background-color: $gray-tint;
 }
