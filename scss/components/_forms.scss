@@ -92,6 +92,10 @@ textarea[readonly], {
 fieldset {
     padding: $spacing-unit / 1.35;
 
+    fieldset {
+        margin-bottom: $spacing-unit;
+    }
+
     legend {
         padding: 0 $spacing-unit / 6;
     }
