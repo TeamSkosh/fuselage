@@ -7,6 +7,7 @@
 button,
 .button {
     @include button($brand-primary);
+    &.filled {@include button($brand-primary, $reverse: true);}
 
     &.extended {
         width: 100%;
@@ -14,40 +15,46 @@ button,
 
     &.secondary {
         @include button($brand-secondary);
+        &.filled {@include button($brand-secondary, $reverse: true);}
     }
 
     &.tertiary {
         @include button($brand-tertiary);
+        &.filled {@include button($brand-tertiary, $reverse: true);}
     }
 
     &.info {
         @include button($info-color);
+        &.filled {@include button($info-color, $reverse: true);}
     }
 
     &.success {
         @include button($success-color);
+        &.filled {@include button($success-color, $reverse: true);}
     }
 
     &.warn {
         @include button($warn-color);
+        &.filled {@include button($warn-color, $reverse: true);}
     }
 
     &.alert {
         @include button($alert-color);
+        &.filled {@include button($alert-color, $reverse: true);}
     }
 
     &.tiny {
         font-size: modular-scale(1);
-        padding: $spacing-unit / 4;
+        padding: $spacing-unit / 4 !important;
     }
 
     &.small {
         font-size: modular-scale(1) * 1.25;
-        padding: $spacing-unit / 2;
+        padding: $spacing-unit / 2 !important;
     }
 
     &.large {
         font-size: modular-scale(2) * 1.25;
-        padding: $spacing-unit;
+        padding: $spacing-unit !important;
     }
 }

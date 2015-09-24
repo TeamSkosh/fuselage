@@ -1,6 +1,6 @@
 {
     "name": "fuselage",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "authors": "Skosh Interactive, L.L.C",
     "description": "A sass-based, mobile-first front-end framework aimed at developer productivity and structural composability.",
     "main": [

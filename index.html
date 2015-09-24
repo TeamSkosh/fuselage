@@ -53,13 +53,15 @@
 
         <p class="byline">By Rand Seay</p>
 
-        <p class="drop-cap"><span class="initial-phrase">Pellentesque habitant morbi tristique</span> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis <a href="#" class="disabled">pulvinar facilisis</a>. Ut felis.</p>
+        <p class="drop-cap"><span class="initial-phrase">Pellentesque habitant morbi tristique</span> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, <a href='#'>Primary Link</a>, <a href='#' class='secondary-text'>Secondary Link</a>, <a href='#' class='tertiary-text'>Tertiary Link</a>, <a href='#' class='info-text'>Info Link</a>, <a href='#' class='success-text'>Success Link</a>, <a href='#' class='warn-text'>Warn Link</a>, <a href='#' class='alert-text'>Alert Link</a>, <a href='#' class='gray-text'>Gray Link</a>, <a href='#' disabled>Disabled Link</a>, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis <a href="#" class="disabled">pulvinar facilisis</a>. Ut felis.</p>
 
         <h1 class="primary-text">Test1 <small>Hello</small></h1>
         <h2 class="secondary-text">Test2 <small>Hello</small></h2>
         <h3 class="tertiary-text">Test3 <small>Hello</small></h3>
         <h4 class="info-text">Test4 <small>Hello</small></h4>
         <h5 class="success-text">Test5 <small>Hello</small></h5>
+
+        <h2>Default Buttons</h2>
 
         <a href="#" class="button">Primary Button</a>
         <a href="#" class="button disabled">Disabled Button</a>
@@ -82,6 +84,29 @@
 
         <a href="#" class="button alert large">Large Alert Button</a>
         <a href="#" class="button alert large" disabled>Disabled Button</a>
+
+        <h2>Filled Buttons</h2>
+
+        <a href="#" class="button filled">Primary Filled Button</a>
+        <a href="#" class="button filled disabled">Disabled Filled Button</a>
+
+        <a href="#" class="button filled secondary radius">Secondary Filled Button</a>
+        <a href="#" class="button filled secondary radius disabled">Disabled Filled Button</a>
+
+        <a href="#" class="button filled tertiary">Tertiary Filled Button</a>
+        <a href="#" class="button filled tertiary disabled">Disabled Filled Button</a>
+
+        <a href="#" class="button filled info rounded">Info Filled Button</a>
+        <a href="#" class="button filled info rounded disabled">Disabled Filled Button</a>
+
+        <a href="#" class="button filled success tiny">Tiny Success Filled Button</a>
+        <a href="#" class="button filled success tiny disabled">Disabled Filled Button</a>
+
+        <a href="#" class="button filled warn small">Small Warn Filled Button</a>
+        <a href="#" class="button filled warn small disabled">Test Filled Button</a>
+
+        <a href="#" class="button filled alert large">Large Alert Filled Button</a>
+        <a href="#" class="button filled alert large" disabled>Disabled Filled Button</a>
 
         <h2>Header Level 2</h2>
 
@@ -636,22 +661,33 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="column one-whole">
-                            <label for="textarea">Textarea:
-                                <textarea cols="40" rows="8" name="textarea" id="textarea" readonly></textarea>
-                            </label>
+                    <fieldset>
+                        <legend>Tell us something</legend>
+
+                        <div class="row">
+                            <div class="column one-whole">
+                                <label for="textarea">Textarea:
+                                    <textarea cols="40" rows="8" name="textarea" id="textarea" readonly></textarea>
+                                </label>
+                            </div>
                         </div>
-                    </div>
+                    </fieldset>
+
 
                     <div class="row">
-                        <div class="column one-whole medium-one-half">
+                        <div class="column one-whole medium-one-third">
                             <label for="file">Upload something!
                                 <input type="file" name="file" id="file" />
                             </label>
                         </div>
 
-                        <div class="column one-whole medium-one-half">
+                        <div class="column one-whole medium-one-third">
+                            <label class="button" for="file2">Upload something else!
+                                <input type="file" name="file2" id="file2" class="visually-hidden" />
+                            </label>
+                        </div>
+
+                        <div class="column one-whole medium-one-third">
                             <label>Agreement</label>
                             <input type="checkbox" name="checkbox" id="checkbox" />
                             <label for="checkbox">I accept
