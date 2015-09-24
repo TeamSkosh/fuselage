@@ -192,5 +192,13 @@ p, blockquote, pre, table,
 ul, ol, dl, figure, address {
   a:not(.button) {
     @include text-link($brand-primary);
+
+    &.secondary-text {@include text-link($brand-secondary);}
+    &.tertiary-text {@include text-link($brand-tertiary);}
+    &.info-text {@include text-link($info-color);}
+    &.success-text {@include text-link($success-color);}
+    &.warn-text {@include text-link($warn-color);}
+    &.alert-text {@include text-link($alert-color);}
+    &.gray-text {@include text-link($gray-tint-text);}
   }
 }
