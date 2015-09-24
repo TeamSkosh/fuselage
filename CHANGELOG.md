@@ -1,5 +1,16 @@
 # Fuselage
 
+## v.1.0.2
+**Date:** 09/24/2015
+- [x] Create a class for hiding content in an accessible way. Fix #60.
+    - Add `visually-hidden` class to hide content.
+- [x] Include filled buttons with the default buttons. Fix #61.
+    - Add `filled` class to existing buttons.
+- [x] Maintain vertical rhythm for nested fieldsets. Fix #63.
+- [x] Allow code font size to be adjusted in the settings file. Fix #65.
+- [x] Support brand-colored text links. Fix #66.
+    - Add `secondary-text`, `tertiary-text`, `success-text`, `warn-text`, or `alert-text` classes to existing text links.
+
 ## v1.0.1
 - [x] Fix border-bottom bug for buttons inside of paragraph tags. Fix #56. Close #58.
 - [x] Add button helper class for creating full-width buttons. Fix #57. Close #59.
