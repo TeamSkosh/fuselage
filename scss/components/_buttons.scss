@@ -49,16 +49,16 @@ button,
 
     &.tiny {
         font-size: modular-scale(1);
-        padding: $spacing-unit / 4 !important;
+        padding: ($spacing-unit / 4) ($spacing-unit / 2) !important;
     }
 
     &.small {
         font-size: modular-scale(1) * 1.25;
-        padding: $spacing-unit / 2 !important;
+        padding: ($spacing-unit / 2) $spacing-unit !important;
     }
 
     &.large {
         font-size: modular-scale(2) * 1.25;
-        padding: $spacing-unit !important;
+        padding: $spacing-unit ($spacing-unit / 0.5)!important;
     }
 }
