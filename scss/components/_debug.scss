@@ -24,3 +24,41 @@ body * {
         }
     }
 }
+
+body:after {
+    background: $white;
+    border-radius: 0 $spacing-unit 0 0;
+    box-shadow: 0 0 20px -5px rgba(153,153,153,0.9);
+    content: 'xsmall';
+    display: block;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: ($spacing-unit / 2) $spacing-unit;
+
+    @include mq($small) {
+        color: $debug-color-1;
+        content: 'small';
+    }
+
+    @include mq($medium) {
+        color: $debug-color-2;
+        content: 'medium';
+    }
+
+    @include mq($large) {
+        color: $debug-color-3;
+        content: 'large';
+    }
+
+    @include mq($xlarge) {
+        color: $debug-color-4;
+        content: 'xlarge';
+    }
+
+    @include mq($xxlarge) {
+        color: $debug-color-5;
+        content: 'xxlarge';
+    }
+}
