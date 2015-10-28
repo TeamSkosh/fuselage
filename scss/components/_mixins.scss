@@ -157,7 +157,7 @@
     font-weight: normal;
     line-height: 1;
     margin-bottom: $spacing-unit;
-    padding: $spacing-unit / 1.5;
+    padding: ($spacing-unit / 1.5) ($spacing-unit / 0.75);
     text-align: center;
 
     @if $reverse == true {
