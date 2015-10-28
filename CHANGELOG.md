@@ -1,5 +1,14 @@
 # Fuselage
 
+## v.1.0.3
+**Date:** 10/28/2015
+- [x] Add a contributing guide. Fix #12. Close #78.
+- [x] Add a class to remove bottom margin on inline buttons. Fix #71. Close #77.
+- [x] Add pull-out quote styles. Fix #73. Close #76.
+- [x] Show media query names when debug is enabled. Fix #74. Close #75.
+- [x] Increase the side padding on buttons. Fix #79. Close #80.
+    - **NOTE**: This will impact button sizes retroactively.
+
 ## v.1.0.2
 **Date:** 09/24/2015
 - [x] Create a class for hiding content in an accessible way. Fix #60.

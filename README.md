@@ -1,5 +1,7 @@
 # [Fuselage](https://teamskosh.github.io/fuselage)
 
+![Fuselage Illustration](http://fuselage.skosh.io/img/fuselage-drawing.svg)
+
 Fuselage is a sass-based, mobile-first front-end framework aimed at developer productivity and structural composability. With a sensible grid, refreshing typographic defaults, and nifty features, it's a great starting point for almost any project.
 
 ## Quickstart
