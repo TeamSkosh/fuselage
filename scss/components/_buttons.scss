@@ -13,6 +13,10 @@ button,
         width: 100%;
     }
 
+    &.inline {
+        margin-bottom: 0;
+    }
+
     &.secondary {
         @include button($brand-secondary);
         &.filled {@include button($brand-secondary, $reverse: true);}
