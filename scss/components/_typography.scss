@@ -136,6 +136,58 @@ blockquote {
     }
 }
 
+.pull-quote {
+    color: lighten($gray, 15%);
+    display: block;
+    font-size: modular-scale(2) * 1.25;
+    font-weight: 100;
+    line-height: 1.125;
+    padding: 0 $spacing-unit;
+    position: relative;
+
+    &:before {
+        color: lighten($gray, 50%);
+        content: open-quote;
+        font-size: modular-scale(4);
+        left: 0;
+        position: absolute;
+        top: -($spacing-unit);
+    }
+
+    &:after {
+        color: lighten($gray, 50%);
+        content: close-quote;
+        font-size: modular-scale(4);
+        position: absolute;
+        right: 0;
+    }
+
+    @include mq($small) {
+        font-size: modular-scale(3);
+
+        &:before {
+            font-size: modular-scale(5);
+        }
+
+        &:after {
+            font-size: modular-scale(5);
+        }
+    }
+
+    @include mq($medium) {
+        font-size: modular-scale(4);
+        padding: 0 $spacing-unit * 1.75;
+
+        &:before {
+            font-size: modular-scale(6);
+        }
+
+        &:after {
+            font-size: modular-scale(6);
+        }
+    }
+}
+
 dt {
   font-weight: bold;
 }
