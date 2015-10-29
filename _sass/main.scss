@@ -8,9 +8,12 @@
 @import "components/base";
 @import "components/header";
 @import "components/sidebar";
-@import "components/hero";
 @import "components/footer";
 @import "components/page";
 @import "components/post";
 @import "components/docs";
 @import "components/syntax";
+
+// Import page styles
+@import "pages/home";
+@import "pages/about";

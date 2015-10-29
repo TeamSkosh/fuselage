@@ -2,6 +2,7 @@
   "name": "fuselage-docs",
   "dependencies": {
     "jquery": "~2.1.4",
-    "fuselage": "~1.0.1"
+    "fuselage": "~1.0.3",
+    "fontawesome": "~4.4.0"
   }
 }

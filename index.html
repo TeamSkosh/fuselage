@@ -3,17 +3,34 @@ layout: default
 title: Home
 ---
 
-<div class="row">
-    <div class="one-whole column">
-        <p class="deck">
-            Fuselage is a sass-based, mobile-first front-end framework aimed at
-            developer productivity and structural composability. With a sensible
-            grid, refreshing typography, and nifty features, it's a great
-            starting point for almost any project. Enjoy!
+<section class='summary'>
+    <div class='container'>
+        <h1><i class='fa fa-gift'></i> What's Inside</h1>
+        <p class='deck'>
+            Fuselage contains a <a href='{{ "/docs/widths/" | prepend: site.baseurl }}'>
+            sensible grid</a>, <a href='{{ "/docs/typography/" | prepend: site.baseurl }}'>
+            refreshing typography</a>, <a href='{{ "/docs/tables/" | prepend: site.baseurl }}'>
+            responsive tables</a>, <a href='{{ "/docs/forms/" | prepend: site.baseurl }}'>
+            powerful forms</a>, and other nifty features. It's a great starting
+            point for almost any project. Enjoy!
         </p>
-    </div><!-- /.column -->
-</div><!-- /.row -->
 
-<hr>
+        <hr class='mini'>
 
-{% include features.html %}
+        <p>
+            Fuselage is open source under the <a href='https://opensource.org/licenses/MIT'>
+            MIT License</a>. It is built and maintained by <a href='http://www.skosh.io'>
+            Skosh Interactive, L.L.C.</a>
+        </p>
+
+        <div class='centered-button'>
+            <a href='https://github.com/teamskosh/fuselage' class='button rounded over-secondary filled'>
+                <i class='fa fa-github'></i> View on GitHub
+            </a>
+        </div>
+    </div><!-- /.container -->
+</section>
+
+<section class='feature-icons'>
+    {% include features.html %}
+</section>

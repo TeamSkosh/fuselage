@@ -26,12 +26,6 @@ hr {
         max-height: 140px;
         width: 100%;
     }
-
-    @include mq($medium) {
-        p {
-            text-align: left;
-        }
-    }
 }
 
 /**
@@ -54,45 +48,6 @@ hr {
     }
 }
 
-.browser-icons {
-    padding-left: 0;
-
-    li {
-        background-image: url("../img/browsers-desktop.png");
-        background-repeat: no-repeat;
-        background-size: auto 50px;
-        display: inline-block;
-        height: 50px;
-        list-style: none;
-        width: 50px;
-
-        h5 {
-            margin-top: 50px;
-            text-align: center;
-        }
-    }
-
-    .chrome {
-        background-position: 0;
-    }
-
-    .firefox {
-        background-position: -50px;
-    }
-
-    .ie {
-        background-position: -100px;
-    }
-
-    .opera {
-        background-position: -150px;
-    }
-
-    .safari {
-        background-position: -200px;
-    }
-}
-
 /**
  * Definitions
  */
@@ -102,4 +57,42 @@ hr {
 
 .def-options {
     list-style: none;
+}
+
+/**
+ * Utilities
+ */
+
+.centered-button {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 ($spacing-unit * 2);
+    position: relative;
+
+    a {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+.over-primary {
+    @include button($white, $text: $brand-primary);
+    &.filled {@include button($white, $text: $brand-primary, $reverse: true);}
+}
+
+.over-secondary {
+    @include button($white, $text: $brand-secondary);
+    &.filled {@include button($white, $text: $brand-secondary, $reverse: true);}
+}
+
+.over-gray {
+    @include button($white, $text: $gray);
+    &.filled {@include button($white, $text: $gray, $reverse: true);}
+}
+
+hr.mini {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
 }

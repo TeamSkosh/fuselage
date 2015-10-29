@@ -3,43 +3,116 @@ layout: page
 title: About
 ---
 
-<p class="deck">You may be asking yourself, do we really need another
-front-end framework? And the answer is no, we don't. The reason Fuselage exists
-is because I needed another front-end framework &mdash;because the ones I tried
-to use there are too heavy, too opinionated, and overwhelming to customize.
-This fits my needs, and if no one ever uses it but me, I'd be just fine with
-that.</p>
+<section class='about-info'>
+    <div class='container'>
+        <h1><i class='fa fa-code'></i> Another Front-End Framework?</h1>
+        <p class="deck">
+            Do we really need more of them?
+        </p>
 
-<a href="{{ '/docs' | prepend: site.baseurl }}" class="button">Read the Docs</a>
-<a href="https://github.com/teamskosh/fuselage/issues" class="button info">Report Bugs</a>
+        <hr class='mini secondary'>
 
-<hr>
+        <p>
+            Eh. Maybe not. But the reason Fuselage exists is because <em>we</em>
+            needed another front-end framework &mdash;because the ones we tried
+            to use were too heavy, too opinionated, and overwhelming to
+            customize. This fits our needs, and if no one ever uses it but us,
+            we'd be just fine with that.
+        </p>
 
-<h3>How's it different?</h3>
+        <div class='centered-button'>
+            <a href="https://github.com/teamskosh/fuselage/issues" class="button secondary filled rounded">
+                <i class='fa fa-github'></i>
+                Report Bugs
+            </a>
+        </div>
+    </div><!-- /.container -->
+</section>
 
-<p>Fuselage has no javascript dependencies, compiles on
-<a target="_blank" href="http://libsass.org/">Libsass</a>, and handles some
-historically problematic elements well. It has
-<a href="{{ '/docs/tables' | prepend: site.baseurl }}">responsive tables</a> baked
-in, a <a href="{{ '/docs/widths' | prepend: site.baseurl }}">simple and powerful
-grid system</a>, and typography based on
-<a target="_blank" href="http://www.modularscale.com/">Modular Scale</a>.</p>
+<section class='about-different'>
+    <div class='container'>
+        <h1><i class='fa fa-comment'></i> How's it different?</h1>
 
-<p>It handles <a href="{{ '/docs/forms' | prepend: site.baseurl }}">responsive
-forms</a> well, provides some
-<a href="{{ '/docs/helpers' | prepend: site.baseurl }}">thoughtful helpers</a>, and
-looks pretty darn good too. All with the goal to get you up and running quickly.
-Quit rebuilding things over and over, and build websites faster and more
-consistently.</p>
+        <hr>
 
-<h3>Browser Compatibilities</h3>
+        <div class='about-different-points row'>
+            <div class='column one-whole medium-one-half'>
+                <i class='fa fa-2x fa-cog'></i>
+                <h3>Dependencies</h3>
 
-<ul class="browser-icons">
-    <li class="chrome"><h5>Chrome</h5></li>
-    <li class="firefox"><h5>Firefox</h5></li>
-    <li class="ie"><h5>IE 9+</h5></li>
-    <li class="opera"><h5>Opera</h5></li>
-    <li class="safari"><h5>Safari</h5></li>
-</ul>
+                <p>
+                    Fuselage has no javascript dependencies, compiles on
+                    <a target="_blank" href="http://libsass.org/">Libsass</a>,
+                    and handles some historically problematic elements well.
+                </p>
+            </div><!-- /.column -->
 
-{% include features.html %}
+            <div class='column one-whole medium-one-half'>
+                <i class='fa fa-2x fa-arrows-h'></i>
+                <h3>Responsive</h3>
+
+                <p>
+                    It has <a href='{{ "/docs/tables" | prepend: site.baseurl }}'>responsive tables</a> baked in, a simple and powerful
+                    <a href='{{ "/docs/widths" | prepend: site.baseurl }}'>grid
+                    system</a>, and easy to understand, mobile-first
+                    <a href='{{ "/docs/widths" | prepend: site.baseurl }}'>media
+                    queries</a>.
+                </p>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+
+        <div class='about-different-points row'>
+            <div class='column one-whole medium-one-half'>
+                <i class='fa fa-2x fa-i-cursor'></i>
+                <h3>Typography</h3>
+
+                <p>
+                    An entire <a href='{{ "/docs/widths" | prepend: site.baseurl }}'>
+                    typographic system</a> is constructed for you using
+                    <a target='_blank' href='http://www.modularscale.com/'>
+                    Modular Scale</a> and easily customizable settings.
+                </p>
+            </div><!-- /.column -->
+
+            <div class='column one-whole medium-one-half'>
+                <i class='fa fa-2x fa-truck'></i>
+                <h3>Ready to Go</h3>
+
+                <p>
+                    Fuselage handles
+                    <a href="{{ '/docs/forms' | prepend: site.baseurl }}">
+                    responsive forms</a> well and provides some
+                    <a href="{{ '/docs/helpers' | prepend: site.baseurl }}">
+                    thoughtful helpers</a>. All with the goal to get you up and
+                    running quickly.
+                </p>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+
+        <div class='centered-button'>
+            <a href="{{ '/docs' | prepend: site.baseurl }}" class="button over-primary filled rounded">
+                Read the Docs
+            </a>
+        </div>
+    </div><!-- /.container -->
+</section>
+
+<section class='about-browsers'>
+    <div class='container'>
+        <h1><i class='fa fa-laptop'></i> Browser Compatibilities</h1>
+
+        <hr class='mini'>
+
+        <ul class="browser-icons">
+            <li class="chrome"><h5>Chrome</h5></li>
+            <li class="firefox"><h5>Firefox</h5></li>
+            <li class="ie"><h5>IE 9+</h5></li>
+            <li class="opera"><h5>Opera</h5></li>
+            <li class="safari"><h5>Safari</h5></li>
+        </ul>
+    </div><!-- /.container -->
+</section>
+
+<section class='feature-icons'>
+    {% include features.html %}
+</section>

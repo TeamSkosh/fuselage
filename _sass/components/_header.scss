@@ -2,18 +2,21 @@
  * Site header
  */
 .site-header {
-    border-bottom: 1px solid $gray-tint;
+    background: $gray;
     min-height: 60px;
 
     .container {
         position: relative;
     }
+
+    h6 {
+        display: inline;
+    }
 }
 
 .site-title {
-    color: $brand-primary;
+    color: $white;
     float: left;
-    font-size: modular-scale(3);
     line-height: 60px;
     margin-bottom: 0;
 

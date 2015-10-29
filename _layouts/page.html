@@ -2,14 +2,13 @@
 layout: default
 ---
 
-<h2 class="page-title">
-    {{ page.title }}
-    {% if post.title %}
+{% if post.title %}
+    <h2 class="page-title">
         <small>
             <span class="primary-text">➜</span>
             {{ post.title }}
         </small>
-    {% endif %}
-</h2>
+    </h2>
+{% endif %}
 
 {{ content}}

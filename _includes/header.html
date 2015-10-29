@@ -1,15 +1,10 @@
 <header class="site-header">
     <div class="container">
 
-        {% if page.title == "Home" %}
-            <a class="site-title" href="https://github.com/teamskosh">
-                <img src="{{ '/img/skosh-full-horiz-main-rgb.svg' | prepend: site.baseurl }}" alt="Skosh Interactive Logo">
-            </a>
-        {% else %}
-            <a class="site-title" href="{{ site.baseurl }}/">
-                Fuselage
-            </a>
-        {% endif %}
+        <a class="site-title" href="http://www.skosh.io">
+            <h6>by</h6>
+            <img src="{{ '/img/skosh-full-horiz-main2-rgb-light.svg' | prepend: site.baseurl }}" alt="Skosh Interactive Logo">
+        </a>
 
         <nav id="menu-icon">
             <li>
@@ -29,19 +24,27 @@
                     {% assign url_parts = node.url | split: "/" %}
                     {% if url_parts.last == "index.html" %}
                     <li>
-                        <a class="button small" href='{{ site.baseurl | append: "/" | append: url_parts[1] }}'>
+                        <a class="button over-gray {% if page.title == node.title %}filled{% endif %} rounded nav-link" href='{{ site.baseurl | append: "/" | append: url_parts[1] }}'>
+                            {% if node.fa-icon %}
+                                <i class='fa fa-{{ node.fa-icon }}'> </i>
+                            {% endif %}
                             {{ node.title }}
                         </a>
                     </li>
                     {% else %}
                     <li>
-                        <a class="button small" href='{{ node.url | prepend: site.baseurl  }}'>
+                        <a class="button over-gray {% if page.title == node.title %}filled{% endif %} rounded nav-link" href='{{ node.url | prepend: site.baseurl  }}'>
                             {{ node.title }}
                         </a>
                     </li>
                     {% endif %}
                 {% endif %}
             {% endfor %}
+            <li>
+                <a class="button over-gray {% if page.title == 'Home'%}filled{% endif %} rounded nav-link" href="{{ site.baseurl }}/">
+                    Home
+                </a>
+            </li>
         </nav>
     </div>
 </header>

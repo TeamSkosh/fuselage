@@ -1,13 +1,24 @@
-<div class="hero">
-    <div class="container">
-        <div class="row">
-            <div class="one-whole medium-one-half column">
-                <h1>Welcome to Fuselage</h1>
-                <a href="{{ '/docs' | prepend: site.baseurl }}" class="button primary">Get Started</a>
-                <a href="https://github.com/teamskosh/fuselage" class="button tiny info">View on GitHub</a>
+<div class='hero'>
+    <div class='container'>
+        <div class='row'>
+            <div class='one-whole medium-one-half column'>
+                <p class='headline primary-text'><small>Meet</small> Fuselage</p>
+                <hr class="secondary">
+                <p class='deck'>
+                    A sass-based, mobile-first front-end framework aimed at
+                    developer productivity and structural composability.
+                </p>
             </div><!-- /.column -->
-            <div class="one-whole medium-one-half column">
-                <img src="{{ '/img/fuselage-drawing.svg' | prepend: site.baseurl }}" alt="Fuselage Drawing">
+            <div class='one-whole medium-one-half column'>
+                <img src='{{ "/img/fuselage-drawing.svg" | prepend: site.baseurl }}' alt='Fuselage Drawing'>
+
+                <a href='{{ "/docs" | prepend: site.baseurl }}' class='button primary filled rounded'>
+                    <i class='fa fa-plane'></i> Get Airborne
+                </a>
+
+                <a href='{{ "/about" | prepend: site.baseurl }}' class='button secondary tiny rounded'>
+                    <i class='fa fa-info-circle'></i> Learn more
+                </a>
             </div><!-- /.column -->
         </div><!-- /.row -->
     </div><!-- /.container -->

@@ -1,0 +1,69 @@
+/*
+ * Home Page Styles
+ */
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.85),
+            rgba(255, 255, 255, 0.85)
+        ),
+        url('../img/cockpit-bg.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding: ($spacing-unit * 4) 0;
+
+    .headline {
+        font-family: $specialty-font;
+        line-height: 0.9;
+
+        small {
+            font-family: $base-font;
+        }
+    }
+
+    h1 {
+        color: $brand-secondary;
+        font-size: modular-scale(4);
+
+        @include mq($small) {
+            font-size: modular-scale(5);
+        }
+    }
+
+    img {
+        margin-top: $spacing-unit;
+        width: 100%;
+    }
+
+    .button {
+        margin-bottom: 0;
+    }
+}
+
+.summary {
+    background: $brand-secondary;
+    padding: ($spacing-unit * 4) 0;
+
+    .deck,
+    p,
+    h1 {
+        color: $white;
+        text-align: center;
+
+        a {
+            @include text-link(darken($white, 13%));
+        }
+
+    }
+
+    .deck {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-family: $specialty-font;
+    }
+}
+

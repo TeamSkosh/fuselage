@@ -1,0 +1,120 @@
+/*
+ * About Page Styles
+ */
+
+.about-info,
+.about-different,
+.about-browsers, {
+    .deck,
+    p,
+    h1 {
+        text-align: center;
+
+        a {
+            @include text-link(darken($white, 13%));
+        }
+
+    }
+
+    .deck {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-family: $specialty-font;
+    }
+}
+
+.about-info {
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.85),
+            rgba(255, 255, 255, 0.85)
+        ),
+        url('../img/clouds-bg.jpeg');
+
+    background-attachment: fixed;
+    background-size: cover;
+    padding: ($spacing-unit * 4) 0;
+
+    h1 {
+        font-family: $specialty-font;
+    }
+}
+
+.about-different {
+    background: $brand-primary;
+    color: $white;
+    padding: ($spacing-unit * 4) 0;
+
+    .deck {
+        color: inherit;
+    }
+
+    &.centered-button a {
+        @include button($white);
+
+        &.filled {
+            @include button($white, $reverse: true);
+        }
+    }
+}
+
+.about-different-points {
+    text-align: center;
+
+    h3 {
+        font-weight: 100;
+    }
+}
+
+.about-browsers {
+    background: $gray;
+    color: white;
+    padding: ($spacing-unit * 4) 0;
+
+    h1 {
+        font-family: $specialty-font;
+    }
+
+    .browser-icons {
+        padding-left: 0;
+        text-align: center;
+
+        li {
+            background-image: url("../img/browsers-desktop.png");
+            background-repeat: no-repeat;
+            background-size: auto 50px;
+            display: inline-block;
+            height: 50px;
+            list-style: none;
+            width: 50px;
+
+            h5 {
+                margin-top: 50px;
+                text-align: center;
+            }
+        }
+
+        .chrome {
+            background-position: 0;
+        }
+
+        .firefox {
+            background-position: -50px;
+        }
+
+        .ie {
+            background-position: -100px;
+        }
+
+        .opera {
+            background-position: -150px;
+        }
+
+        .safari {
+            background-position: -200px;
+        }
+    }
+}

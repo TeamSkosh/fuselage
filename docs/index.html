@@ -3,28 +3,34 @@ layout: page
 title: Documentation
 ---
 
-<div class="row">
-    <div class="one-whole medium-one-fourth column">
-        {% include list-info.html %}
-        {% include list-components.html %}
-    </div><!-- /.column -->
+<section class='documentation'>
+    <div class='container'>
+        <h2 class='secondary-text'>Documentation</h2>
 
-    <div class="one-whole medium-three-fourths column">
-        <p>
-            We hope that Fuselage is straightforward to start using, regardless
-            of your skill level. Here is some info to get you up and running.
-        </p>
+        <div class='row'>
+            <div class='one-whole medium-one-fourth column'>
+                {% include list-info.html %}
+                {% include list-components.html %}
+            </div><!-- /.column -->
 
-        <hr>
+            <div class='one-whole medium-three-fourths column'>
+                <p>
+                    We hope that Fuselage is straightforward to start using, regardless
+                    of your skill level. Here is some info to get you up and running.
+                </p>
 
-        <h3>Installation</h3>
+                <hr>
 
-        <p>
-            Install via bower
-        </p>
+                <h3>Installation</h3>
 
-        {% highlight bash %}
-        $ bower install fuselage
-        {% endhighlight %}
-    </div><!-- /.column -->
-</div><!-- /.row -->
+                <p>
+                    Install via bower
+                </p>
+
+                {% highlight bash %}
+                $ bower install fuselage
+                {% endhighlight %}
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
