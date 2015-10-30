@@ -1,7 +1,7 @@
 ---
 layout: docs
 title:  "Variables"
-date:   2015-05-12 15:19:47
+date:   2015-10-30 11:41:02
 order: 9
 permalink: /docs/variables
 categories: docs component

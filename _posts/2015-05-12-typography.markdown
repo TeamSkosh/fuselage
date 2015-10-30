@@ -1,7 +1,7 @@
 ---
 layout: docs
 title:  "Typography"
-date:   2015-05-12 15:19:47
+date:   2015-10-30 11:42:30
 order: 7
 permalink: /docs/typography
 categories: docs component

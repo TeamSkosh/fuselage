@@ -1,7 +1,7 @@
 ---
 layout: docs
 title:  "Debugger"
-date:   2015-05-12 15:19:47
+date:   2015-10-30 13:52:34
 order: 2
 permalink: /docs/debug
 categories: docs component
@@ -13,7 +13,7 @@ Here are some handy styles for debugging your project. You're welcome :)
 
 ### How to Enable Debug
 
-In the `_settings.scss` file, set `$gimme-debug: true`. In addition to including the styles, debug will output the current modular scale to the command line when you compile.
+In the `_settings.scss` file, set `$gimme-debug: true`. Every element will be shown outlined so that you can easily visualize the layout you are constructing
 
 ##### Output
 
@@ -44,5 +44,9 @@ In the `_settings.scss` file, set `$gimme-debug: true`. In addition to including
     <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
 </ol>
 {% endhighlight %}
+
+In addition to including the styles, debug will output the current modular scale to the command line when you compile, and will display the current media size in the bottom left-hand corner of the screen.
+
+![Debug Module Screenshot]({{ "/img/debug-screenshot.png" | prepend: site.baseurl }})
 
 <hr>

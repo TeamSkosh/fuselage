@@ -20,11 +20,11 @@ layout: default
 
             <section class="one-whole medium-three-fourths column">
                 <article class="post-content">
-                    {{ content }}
-
                     <p class="post-meta">
-                        {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+                        Last updated: {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
                     </p>
+
+                    {{ content }}
                 </article>
             </section><!-- /.column -->
         </div><!-- /.row -->

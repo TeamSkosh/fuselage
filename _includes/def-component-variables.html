@@ -1,4 +1,4 @@
-<h3>Features</h3>
+<h3 id="vars-features">Features</h3>
 
 <p>
     <code class="def-title">$gimme-debug</code>
@@ -26,7 +26,7 @@
 
 <hr>
 
-<h3>Breakpoints</h3>
+<h3 id="vars-breakpoints">Breakpoints</h3>
 
 <div class="row">
     <div class="column one-whole medium-one-half">
@@ -84,7 +84,7 @@
 
 <hr>
 
-<h3>Colors</h3>
+<h3 id="vars-colors">Colors</h3>
 
 <div class="row">
     <div class="column one-whole medium-one-half">
@@ -150,7 +150,7 @@
 
 <hr>
 
-<h3>Typography</h3>
+<h3 id="vars-typography">Typography</h3>
 
 <p>
     <code class="def-title">$base-ratio</code>
@@ -160,34 +160,87 @@
     typography. Below are variable names for valid ratios you can use, along with their values.
 </p>
 
-<ul class="def-options">
-    <div class="row">
-        <div class="column one-whole medium-one-half">
-            <li>$golden: 1.618034</li>
-            <li>$double-octave: 4</li>
-            <li>$major-twelfth: 3</li>
-            <li>$major-eleventh: 2.666666667</li>
-            <li>$major-tenth: 2.5</li>
-            <li>$octave: 2</li>
-            <li>$major-seventh: 1.875</li>
-            <li>$minor-seventh: 1.777777778</li>
-        </div>
-        <div class="column one-whole medium-one-half">
-            <li>$major-sixth: 1.666666667</li>
-            <li>$minor-sixth: 1.6</li>
-            <li>$fifth: 1.5</li>
-            <li>$augmented-fourth : 1.41421</li>
-            <li>$fourth: 1.333333333</li>
-            <li>$major-third: 1.25</li>
-            <li>$minor-third: 1.2</li>
-            <li>$major-second: 1.125</li>
-            <li>$minor-second: 1.066666667</li>
-        </div>
-    </div>
-</ul>
+<table>
+    <thead>
+        <tr>
+            <th>Ratio</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-th="Ratio">Golden (Phi)</td>
+            <td data-th="Value">1.618034</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Double Octave</td>
+            <td data-th="Value">4</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Twelfth</td>
+            <td data-th="Value">3</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Eleventh</td>
+            <td data-th="Value">2.666666667</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Tenth</td>
+            <td data-th="Value">1.5</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Octave</td>
+            <td data-th="Value">2</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Seventh</td>
+            <td data-th="Value">1.875</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Minor Seventh</td>
+            <td data-th="Value">1.777777778</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Sixth</td>
+            <td data-th="Value">1.666666667</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Minor Sixth</td>
+            <td data-th="Value">1.6</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Fifth</td>
+            <td data-th="Value">1.5</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Augmented Fourth</td>
+            <td data-th="Value">1.41421</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Fourth</td>
+            <td data-th="Value">1.333333333</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Third</td>
+            <td data-th="Value">1.25</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Minor Third</td>
+            <td data-th="Value">1.2</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Second</td>
+            <td data-th="Value">1.125</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Minor Second</td>
+            <td data-th="Value">1.066666667</td>
+        </tr>
+    </tbody>
+</table>
 
-<p id="def-mixin-button">
-    <code class="def-title">modular-scale([$index, $scale-list])</code><br>
+<p id="def-mixin-modular-scale">
+    <code class="def-title">modular-scale([$index, $scale-list])</code> function<br>
 
     <span class="secondary-text">➜</span> Accesses a given modular scale by index.
 </p>
@@ -251,6 +304,13 @@
 </p>
 
 <p>
+    <code class="def-title">$code-font-size</code>
+    <small><em>font size</em> (1.45rem)</small><br>
+
+    <span class="secondary-text">➜</span> Sets the text color for the project.
+</p>
+
+<p>
     <code class="def-title">$text-color</code>
     <small><em>color value</em> (#2E2E2E)</small><br>
 
@@ -259,7 +319,7 @@
 
 <hr>
 
-<h3>Spacing</h3>
+<h3 id="vars-spacing">Spacing</h3>
 
 <p>
     <code class="def-title">$spacing-unit</code>

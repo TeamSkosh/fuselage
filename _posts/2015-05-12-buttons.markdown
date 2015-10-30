@@ -1,7 +1,7 @@
 ---
 layout: docs
 title:  "Buttons"
-date:   2015-05-12 15:19:47
+date:   2015-10-30 11:34:36
 order: 1
 permalink: /docs/buttons
 categories: docs component
@@ -13,27 +13,29 @@ Buttons are a nice way to draw attention an important link or call to action. Fu
 
 ### Simple Button
 
-Merely supply the `button` class to an `anchor` element, and you have a button.
+Merely supply the `button` class to an `anchor` element, and you have a button. Additionally, tack on the `filled` class to fill in the button and reverses the hover effect.
 
 ##### Output
 
 <a href="#" class="button">Simple</a>
+<a href="#" class="button filled">Filled</a>
 
 ##### HTML
 
 {% highlight html %}
 <a href="#" class="button">Simple</a>
+<a href="#" class="button filled">Filled</a>
 {% endhighlight %}
 
 <hr>
 
 ### Button Colors
 
-Utilize the [branding variables]({{ "/docs/variables" | prepend: base_url }}) to add color to your buttons.
+Utilize the [branding color variables]({{ "/docs/variables#vars-colors" | prepend: base_url }}) to add color to your buttons.
 
 ##### Output
 
-<a href="#" class="button secondary">Secondary</a>
+<a href="#" class="button secondary filled">Secondary</a>
 <a href="#" class="button tertiary">Tertiary</a>
 <a href="#" class="button info">Info</a>
 <a href="#" class="button success">Success</a>
@@ -43,7 +45,7 @@ Utilize the [branding variables]({{ "/docs/variables" | prepend: base_url }}) to
 ##### HTML
 
 {% highlight html %}
-<a href="#" class="button secondary">Secondary</a>
+<a href="#" class="button secondary filled">Secondary</a>
 <a href="#" class="button tertiary">Tertiary</a>
 <a href="#" class="button info">Info</a>
 <a href="#" class="button success">Success</a>

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title:  "Helpers"
-date:   2015-05-12 15:19:47
+date:   2015-10-30 11:28:34
 order: 4
 permalink: /docs/helpers
 categories: docs component

@@ -183,10 +183,10 @@
 
 <hr>
 
-<h3>Blockquotes and Code</h3>
+<h3>Blockquotes and Pull Quotes</h3>
 
 <p>
-    <code>blockquote</code>s and <code>code</code> blocks are made easy in Fuselage.
+    <code>blockquote</code>s and pull quotes blocks are made easy in Fuselage.
 </p>
 
 <div class="row">
@@ -200,10 +200,9 @@
             <cite>John Madden</cite>
         </blockquote>
 
-        {% highlight bash %}
-        # clone the repository
-git clone https://github.com/TeamSkosh/fuselage.git
-        {% endhighlight %}
+        <p class='pull-quote'>
+            For the Present is the point at which time touches eternity.
+        </p>
     </div><!-- /.column -->
 
     <div class="column one-whole medium-one-half">
@@ -217,9 +216,78 @@ git clone https://github.com/TeamSkosh/fuselage.git
     <cite>John Madden</cite>
 </blockquote>
 
+<p class='pull-quote'>
+    For the Present is the point at which time touches eternity.
+</p>
+        {% endhighlight %}
+    </div><!-- /.column -->
+</div><!-- /.row -->
+
+<hr>
+
+<h3>Code Snippets</h3>
+
+<p>
+    Fuselage has built-in styles for <code>code</code> blocks as well.
+</p>
+
+<div class="row">
+    <div class="column one-whole medium-one-half">
+        <h5>Output</h5>
+
+        {% highlight bash %}
+        # clone the repository
+git clone https://github.com/TeamSkosh/fuselage.git
+        {% endhighlight %}
+    </div><!-- /.column -->
+
+    <div class="column one-whole medium-one-half">
+        <h5>HTML</h5>
+
+        {% highlight html %}
 <pre><code># clone the repository
 git clone https://github.com/TeamSkosh/fuselage.git
 </code></pre>
+        {% endhighlight %}
+    </div><!-- /.column -->
+</div><!-- /.row -->
+
+<hr>
+
+<h3>Text Links</h3>
+
+<p>
+    Fuselage allows you to use your branding heirarchy on links within your
+    text. Simply use <a href="{{ '/docs/variables#vars-colors' | prepend: site.baseurl }}">
+    branding color variables</a> to change the color of text links. Also, create
+    your own using the <a  href="{{ '/docs/mixins#def-mixin-link' | prepend: site.baseurl }}">
+    `text-link` mixin</a>
+</p>
+
+<div class="row">
+    <div class="column one-whole medium-one-half">
+        <h5>Output</h5>
+
+        <p class="deck">
+            This <a href="#">paragraph</a> displays the
+            <a href="#" class="secondary-text">control</a> that a user
+            <a href="#" class="tertiary-text">has over</a> text links.
+            <a href="#" class="warn-text">Linking</a> is a helpful for
+            <a href="#" class="success-text">curious readers</a>!
+        </p>
+    </div><!-- /.column -->
+
+    <div class="column one-whole medium-one-half">
+        <h5>HTML</h5>
+
+        {% highlight html %}
+        <p>
+    This <a>paragraph</a> displays the
+    <a class="secondary-text">control</a> that a user
+    <a class="tertiary-text">has over</a> text links.
+    <a class="warn-text">Linking</a> is a helpful for
+    <a class="success-text">curious readers</a>!
+</p>
         {% endhighlight %}
     </div><!-- /.column -->
 </div><!-- /.row -->
