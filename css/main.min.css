@@ -2288,7 +2288,7 @@ hr.mini {
     margin-bottom: 0; }
 
 .summary {
-  background: #6DBBB7;
+  background: #FF6633;
   padding: 10.4721361006rem 0; }
   .summary .deck, .summary p, .summary h1 {
     color: #FFF;
@@ -2337,7 +2337,7 @@ hr.mini {
     font-family: "Palatino linotype", "Book Antiqua", Palatino, serif; }
 
 .about-different {
-  background: #FF6633;
+  background: #6DBBB7;
   color: #FFF;
   padding: 10.4721361006rem 0; }
   .about-different .deck {
