@@ -1,5 +1,10 @@
 # Fuselage
 
+## v.1.0.4
+- [x] Use gulp instead of grunt.
+- [x] Make Fuselage an npm package. Fix #39.
+- [x] Fix import problems with the debug module.
+
 ## v.1.0.3
 **Date:** 10/28/2015
 - [x] Add a contributing guide. Fix #12. Close #78.

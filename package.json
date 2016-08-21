@@ -5,7 +5,7 @@
     "url": "https://github.com/TeamSkosh/fuselage"
   },
   "description": "A sass-based, mobile-first front-end framework aimed at developer productivity and structural composability.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
