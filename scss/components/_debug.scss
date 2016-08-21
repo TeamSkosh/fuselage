@@ -1,64 +1,66 @@
+@if $gimme-debug == true {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     _debug.scss
 
     Debugging styles to evaluate layout and provide suggestions
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-@warn "MODULAR SCALE DEBUG: Your ratio is " + $base-ratio + " and your generate scale is " + $generated-scale;
+    @warn "MODULAR SCALE DEBUG: Your ratio is " + $base-ratio + " and your generate scale is " + $generated-scale;
 
-body * {
-    outline: 1px solid $debug-color-1 !important;
-    * {
-        outline: 1px solid $debug-color-2 !important;
+    body * {
+        outline: 1px solid $debug-color-1 !important;
         * {
-            outline: 1px solid $debug-color-3 !important;
+            outline: 1px solid $debug-color-2 !important;
             * {
-                outline: 1px solid $debug-color-4 !important;
+                outline: 1px solid $debug-color-3 !important;
                 * {
-                    outline: 1px solid $debug-color-5 !important;
+                    outline: 1px solid $debug-color-4 !important;
                     * {
-                        outline: 1px solid $debug-color-6 !important;
+                        outline: 1px solid $debug-color-5 !important;
+                        * {
+                            outline: 1px solid $debug-color-6 !important;
+                        }
                     }
                 }
             }
         }
     }
-}
 
-body:after {
-    background: $white;
-    border-radius: 0 $spacing-unit 0 0;
-    box-shadow: 0 0 20px -5px rgba(153,153,153,0.9);
-    content: 'xsmall';
-    display: block;
-    font-weight: bold;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: ($spacing-unit / 2) $spacing-unit;
+    body:after {
+        background: $white;
+        border-radius: 0 $spacing-unit 0 0;
+        box-shadow: 0 0 20px -5px rgba(153,153,153,0.9);
+        content: 'xsmall';
+        display: block;
+        font-weight: bold;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: ($spacing-unit / 2) $spacing-unit;
 
-    @include mq($small) {
-        color: $debug-color-1;
-        content: 'small';
-    }
+        @include mq($small) {
+            color: $debug-color-1;
+            content: 'small';
+        }
 
-    @include mq($medium) {
-        color: $debug-color-2;
-        content: 'medium';
-    }
+        @include mq($medium) {
+            color: $debug-color-2;
+            content: 'medium';
+        }
 
-    @include mq($large) {
-        color: $debug-color-3;
-        content: 'large';
-    }
+        @include mq($large) {
+            color: $debug-color-3;
+            content: 'large';
+        }
 
-    @include mq($xlarge) {
-        color: $debug-color-4;
-        content: 'xlarge';
-    }
+        @include mq($xlarge) {
+            color: $debug-color-4;
+            content: 'xlarge';
+        }
 
-    @include mq($xxlarge) {
-        color: $debug-color-5;
-        content: 'xxlarge';
+        @include mq($xxlarge) {
+            color: $debug-color-5;
+            content: 'xxlarge';
+        }
     }
 }
