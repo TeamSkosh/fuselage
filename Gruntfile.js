@@ -94,13 +94,13 @@ module.exports = function(grunt) {
 
         shell: {
             jekyllServe: {
-                command: "jekyll serve --baseurl="
+                command: "bundle exec jekyll serve --baseurl="
             },
             jekyllBuild: {
-                command: "jekyll build --config _config-dev.yml"
+                command: "bundle exec jekyll build --config _config-dev.yml"
             },
             jekyllDeploy: {
-                command: "jekyll build --config _config.yml"
+                command: "bundle exec jekyll build --config _config.yml"
             }
         },
 
